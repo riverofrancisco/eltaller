@@ -19,23 +19,20 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
+          cache-dependency-path: eltaller/package-lock.json
 
       - name: Install Dependencies
-        run: |
-          cd eltaller
-          npm install
+        working-directory: eltaller
+        run: npm install
 
       - name: Run Linting
-        run: |
-          cd eltaller
-          npm run lint
+        working-directory: eltaller
+        run: npm run lint
 
       - name: Run TypeScript Check
-        run: |
-          cd eltaller
-          npm run type-check
+        working-directory: eltaller
+        run: npm run type-check
 
       - name: Build Project
-        run: |
-          cd eltaller
-          npm run build
+        working-directory: eltaller
+        run: npm run build
