@@ -1,0 +1,41 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main, development]
+  pull_request:
+    branches: [main, development]
+
+jobs:
+  build-and-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: |
+          cd eltaller
+          npm install
+
+      - name: Run Linting
+        run: |
+          cd eltaller
+          npm run lint
+
+      - name: Run TypeScript Check
+        run: |
+          cd eltaller
+          npm run type-check
+
+      - name: Build Project
+        run: |
+          cd eltaller
+          npm run build
