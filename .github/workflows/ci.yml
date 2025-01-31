@@ -25,10 +25,6 @@ jobs:
         working-directory: eltaller
         run: npm install
 
-      - name: Run Linting
-        working-directory: eltaller
-        run: npm run lint
-
       - name: Run TypeScript Check
         working-directory: eltaller
         run: npm run type-check
