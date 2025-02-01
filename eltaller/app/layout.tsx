@@ -1,4 +1,4 @@
-import DeployButton from "@/components/deploy-button";
+/* import DeployButton from "@/components/deploy-button";
 import { EnvVarWarning } from "@/components/env-var-warning";
 import HeaderAuth from "@/components/header-auth";
 import { ThemeSwitcher } from "@/components/theme-switcher";
@@ -67,6 +67,33 @@ export default function RootLayout({
           </main>
         </ThemeProvider>
       </body>
+    </html>
+  );
+} */
+
+import type { Metadata } from 'next';
+import { Inter, Roboto } from 'next/font/google';
+import './globals.css';
+
+const roboto = Roboto({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
+
+export const metadata: Metadata = {
+  title: 'El Taller - Espacio de Arte',
+  description: 'Bienvenidos a nuestro espacio de arte y creatividad.',
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="es">
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }
