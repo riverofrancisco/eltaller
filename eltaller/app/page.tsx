@@ -49,7 +49,7 @@ export default function Welcome() {
           Facebook
         </a>
         <a
-          href="https://maps.app.goo.gl/JcZKqX2T1eYqnez38"
+          href="https://maps.app.goo.gl/XzDtU67PiLhYYVVG7"
           target="_blank"
           className={styles.link}
         >
