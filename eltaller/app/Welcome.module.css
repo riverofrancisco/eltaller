@@ -39,6 +39,8 @@
 .link {
   text-decoration: none;
   background-color: rgba(105, 106, 105, 0.478);
+  display: flex;
+  justify-content: space-between;
   color: white;
   padding: 10px 15px;
   border-radius: 5px;

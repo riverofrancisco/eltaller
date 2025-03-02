@@ -16,8 +16,15 @@ export default async function Index() {
 }
  */
 
-import Image from 'next/image';
-import styles from './Welcome.module.css';
+import Image from 'next/image'; //-
+import styles from './Welcome.module.css'; //-
+import InstagramIcon from '@mui/icons-material/Instagram'; //-
+import FacebookIcon from '@mui/icons-material/Facebook'; //-
+import LocationOnIcon from '@mui/icons-material/LocationOn'; //-
+import YouTubeIcon from '@mui/icons-material/YouTube'; //-
+import WhatsAppIcon from '@mui/icons-material/WhatsApp'; //-
+import ContentCopyIcon from '@mui/icons-material/ContentCopy'; //+/ {"source":"chat"}
+import { IconButton } from '@mui/material';
 
 export default function Welcome() {
   return (
@@ -39,6 +46,7 @@ export default function Welcome() {
           target="_blank"
           className={styles.link}
         >
+          <InstagramIcon />
           Instagram
         </a>
         <a
@@ -46,6 +54,7 @@ export default function Welcome() {
           target="_blank"
           className={styles.link}
         >
+          <FacebookIcon />
           Facebook
         </a>
         <a
@@ -53,6 +62,7 @@ export default function Welcome() {
           target="_blank"
           className={styles.link}
         >
+          <LocationOnIcon />
           Donde estamos
         </a>
         <a
@@ -60,6 +70,7 @@ export default function Welcome() {
           target="_blank"
           className={styles.link}
         >
+          <YouTubeIcon />
           Youtube
         </a>
         <a
@@ -67,6 +78,7 @@ export default function Welcome() {
           target="_blank"
           className={styles.link}
         >
+          <WhatsAppIcon />
           Contacto
         </a>
       </div>
