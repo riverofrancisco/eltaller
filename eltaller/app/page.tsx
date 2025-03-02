@@ -46,40 +46,41 @@ export default function Welcome() {
           target="_blank"
           className={styles.link}
         >
-          <InstagramIcon />
           Instagram
+          <InstagramIcon />
+          
         </a>
         <a
           href="https://www.facebook.com/eltaller.espaciodearte"
           target="_blank"
           className={styles.link}
         >
-          <FacebookIcon />
           Facebook
+          <FacebookIcon />
         </a>
         <a
           href="https://maps.app.goo.gl/XzDtU67PiLhYYVVG7"
           target="_blank"
           className={styles.link}
         >
-          <LocationOnIcon />
           Donde estamos
+          <LocationOnIcon />
         </a>
         <a
           href="https://www.youtube.com/@eltaller.espaciodearte"
           target="_blank"
           className={styles.link}
         >
-          <YouTubeIcon />
           Youtube
+          <YouTubeIcon />
         </a>
         <a
           href="https://api.whatsapp.com/send?phone=541122509184"
           target="_blank"
           className={styles.link}
         >
+          Escribinos
           <WhatsAppIcon />
-          Contacto
         </a>
       </div>
     </div>
