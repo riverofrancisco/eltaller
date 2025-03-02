@@ -16,8 +16,15 @@ export default async function Index() {
 }
  */
 
-import Image from 'next/image';
-import styles from './Welcome.module.css';
+import Image from 'next/image'; //-
+import styles from './Welcome.module.css'; //-
+import InstagramIcon from '@mui/icons-material/Instagram'; //-
+import FacebookIcon from '@mui/icons-material/Facebook'; //-
+import LocationOnIcon from '@mui/icons-material/LocationOn'; //-
+import YouTubeIcon from '@mui/icons-material/YouTube'; //-
+import WhatsAppIcon from '@mui/icons-material/WhatsApp'; //-
+import ContentCopyIcon from '@mui/icons-material/ContentCopy'; //+/ {"source":"chat"}
+import { IconButton } from '@mui/material';
 
 export default function Welcome() {
   return (
@@ -40,6 +47,8 @@ export default function Welcome() {
           className={styles.link}
         >
           Instagram
+          <InstagramIcon />
+          
         </a>
         <a
           href="https://www.facebook.com/eltaller.espaciodearte"
@@ -47,6 +56,7 @@ export default function Welcome() {
           className={styles.link}
         >
           Facebook
+          <FacebookIcon />
         </a>
         <a
           href="https://maps.app.goo.gl/XzDtU67PiLhYYVVG7"
@@ -54,6 +64,7 @@ export default function Welcome() {
           className={styles.link}
         >
           Donde estamos
+          <LocationOnIcon />
         </a>
         <a
           href="https://www.youtube.com/@eltaller.espaciodearte"
@@ -61,13 +72,15 @@ export default function Welcome() {
           className={styles.link}
         >
           Youtube
+          <YouTubeIcon />
         </a>
         <a
           href="https://api.whatsapp.com/send?phone=541122509184"
           target="_blank"
           className={styles.link}
         >
-          Contacto
+          Escribinos
+          <WhatsAppIcon />
         </a>
       </div>
     </div>
