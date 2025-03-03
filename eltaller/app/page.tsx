@@ -28,60 +28,61 @@ import { IconButton } from '@mui/material';
 
 export default function Welcome() {
   return (
-    <div className={styles.container}>
-      <div className={styles.profile}>
-        <Image
-          src="/images/logo.png"
-          alt="El Taller"
-          width={150}
-          height={150}
-          className={styles.avatar}
-        />
-        <h1 className={styles.title}>El Taller</h1>
-        <p className={styles.description}>Espacio de Arte</p>
-      </div>
-      <div className={styles.links}>
-        <a
-          href="https://www.instagram.com/eltaller.espaciodearte/"
-          target="_blank"
-          className={styles.link}
-        >
-          Instagram
-          <InstagramIcon />
-          
-        </a>
-        <a
-          href="https://www.facebook.com/eltaller.espaciodearte"
-          target="_blank"
-          className={styles.link}
-        >
-          Facebook
-          <FacebookIcon />
-        </a>
-        <a
-          href="https://maps.app.goo.gl/XzDtU67PiLhYYVVG7"
-          target="_blank"
-          className={styles.link}
-        >
-          Donde estamos
-          <LocationOnIcon />
-        </a>
-        <a
-          href="https://www.youtube.com/@eltaller.espaciodearte"
-          target="_blank"
-          className={styles.link}
-        >
-          Youtube
-          <YouTubeIcon />
-        </a>
-        <a
-          href="https://api.whatsapp.com/send?phone=541122509184"
-          target="_blank"
-          className={styles.link}
-        >
-          Escribinos
-          <WhatsAppIcon />
-        </a>
+    <div className={styles.pageContainer}>
+      <div className={styles.container}>
+        <div className={styles.profile}>
+          <Image
+            src="/images/logo.png"
+            alt="El Taller"
+            width={150}
+            height={150}
+            className={styles.avatar}
+          />
+          <h1 className={styles.title}>El Taller</h1>
+          <p className={styles.description}>Espacio de Arte</p>
+        </div>
+        <div className={styles.links}>
+          <a
+            href="https://www.instagram.com/eltaller.espaciodearte/"
+            target="_blank"
+            className={styles.link}
+          >
+            Instagram
+            <InstagramIcon />
+          </a>
+          <a
+            href="https://www.facebook.com/eltaller.espaciodearte"
+            target="_blank"
+            className={styles.link}
+          >
+            Facebook
+            <FacebookIcon />
+          </a>
+          <a
+            href="https://maps.app.goo.gl/XzDtU67PiLhYYVVG7"
+            target="_blank"
+            className={styles.link}
+          >
+            Donde estamos
+            <LocationOnIcon />
+          </a>
+          <a
+            href="https://www.youtube.com/@eltaller.espaciodearte"
+            target="_blank"
+            className={styles.link}
+          >
+            Youtube
+            <YouTubeIcon />
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=541122509184"
+            target="_blank"
+            className={styles.link}
+          >
+            Escribinos
+            <WhatsAppIcon />
+          </a>
+        </div>
       </div>
     </div>
   );

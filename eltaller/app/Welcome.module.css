@@ -1,9 +1,33 @@
+@keyframes colorChange {
+  0% {
+    background-color: white;
+  }
+  33.33% {
+    background-color: #e3c6ff;
+  }
+  66.66% {
+    background-color: #d2f5e1;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+.pageContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  animation: colorChange 5s infinite;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  width: 90%;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -33,7 +57,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 90%;
+  width: 100%;
 }
 
 .link {
@@ -49,5 +73,5 @@
 }
 
 .link:hover {
-  background-color: #ab66a1a9;
+  background-color: #231a24;
 }
