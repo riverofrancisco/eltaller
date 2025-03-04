@@ -19,7 +19,7 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  animation: colorChange 5s infinite;
+  animation: colorChange 6s infinite;
 }
 
 .container {
@@ -64,6 +64,7 @@
   text-decoration: none;
   background-color: rgba(105, 106, 105, 0.478);
   display: flex;
+  align-items: center;
   justify-content: space-between;
   color: white;
   padding: 10px 15px;
