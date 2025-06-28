@@ -61,7 +61,7 @@ export default function AlertDialog(props: AlertDialogProps) {
         <DialogTitle
           id="alert-dialog-title"
           sx={{
-            fontSize: '20px',
+            fontSize: '24px',
             fontWeight: 'bold',
             color: '#333',
             textAlign: 'center',

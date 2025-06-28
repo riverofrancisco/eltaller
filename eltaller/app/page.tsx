@@ -27,13 +27,16 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import AddBoxIcon from '@mui/icons-material/AddBox';
 import AlertDialog from '@/components/Dialogs/EventInfoDialog';
-import DirectionsIcon from '@mui/icons-material/Directions';
+import LibraryMusicRoundedIcon from '@mui/icons-material/LibraryMusicRounded';
 import IconButton from '@mui/material/IconButton';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 
 export default function Welcome() {
   const handleOption1Click = () => {
-    window.open('https://maps.app.goo.gl/yPvaqSgnZfhPqJEX8', '_blank');
+    window.open(
+      'https://drive.google.com/file/d/1joPflGmy9tPJuYyynJ2z-DKksWjcMLId/view?usp=sharing',
+      '_blank'
+    );
   };
 
   const handleOption2Click = () => {
@@ -68,42 +71,21 @@ export default function Welcome() {
           <IconButton
             href="https://www.instagram.com/eltaller.espaciodearte/"
             target="_blank"
-            sx={{
-              color: '#333',
-              backgroundColor: 'rgba(51, 51, 51, 0.1)',
-              '&:hover': {
-                backgroundColor: 'rgba(51, 51, 51, 0.2)',
-                transform: 'scale(1.1)',
-              },
-            }}
+            className={styles.socialIcon}
           >
             <InstagramIcon />
           </IconButton>
           <IconButton
             href="https://www.facebook.com/eltaller.espaciodearte"
             target="_blank"
-            sx={{
-              color: '#333',
-              backgroundColor: 'rgba(51, 51, 51, 0.1)',
-              '&:hover': {
-                backgroundColor: 'rgba(51, 51, 51, 0.2)',
-                transform: 'scale(1.1)',
-              },
-            }}
+            className={styles.socialIcon}
           >
             <FacebookRoundedIcon />
           </IconButton>
           <IconButton
             href="https://www.youtube.com/@eltaller.espaciodearte"
             target="_blank"
-            sx={{
-              color: '#333',
-              backgroundColor: 'rgba(51, 51, 51, 0.1)',
-              '&:hover': {
-                backgroundColor: 'rgba(51, 51, 51, 0.2)',
-                transform: 'scale(1.1)',
-              },
-            }}
+            className={styles.socialIcon}
           >
             <YouTubeIcon />
           </IconButton>
@@ -113,9 +95,9 @@ export default function Welcome() {
           <AlertDialog
             title="KARAOKETÓN 29/06"
             dialogTitle="KARAOKETÓN"
-            option1="Como llegar"
-            option1Icon={<DirectionsIcon />}
-            option2="Contribuir"
+            option1="Quiero cantar"
+            option1Icon={<LibraryMusicRoundedIcon />}
+            option2="Quiero Contribuir"
             option2Icon={<VolunteerActivismIcon />}
             onOption1Click={handleOption1Click}
             onOption2Click={handleOption2Click}

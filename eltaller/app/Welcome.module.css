@@ -82,3 +82,14 @@
 .link:hover {
   background-color: #231a24;
 }
+
+.socialIcon {
+  color: #333;
+  background-color: rgba(51, 51, 51, 0.1);
+  transition: all 0.25s ease;
+}
+
+.socialIcon:hover {
+  background-color: rgba(51, 51, 51, 0.2);
+  transform: scale(1.1);
+}
