@@ -33,7 +33,7 @@
 }
 
 .profile {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .avatar {
@@ -42,15 +42,21 @@
 }
 
 .title {
-  font-size: 24px;
-  margin: 10px 0;
+  font-size: 28px;
+  margin: 15px 0 5px 0;
   color: #333;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
 }
 
 .description {
-  font-size: 16px;
-  color: #555;
+  font-size: 18px;
+  color: #666;
   line-height: 1.5;
+  margin-bottom: 5px;
+  font-style: italic;
+  font-weight: 300;
 }
 
 .links {
@@ -75,4 +81,15 @@
 
 .link:hover {
   background-color: #231a24;
+}
+
+.socialIcon {
+  color: #333;
+  background-color: rgba(51, 51, 51, 0.1);
+  transition: all 0.25s ease;
+}
+
+.socialIcon:hover {
+  background-color: rgba(51, 51, 51, 0.2);
+  transform: scale(1.1);
 }

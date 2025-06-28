@@ -83,7 +83,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: 'El Taller - Espacio de Arte',
-  description: 'Bienvenidos a nuestro espacio de arte y creatividad.',
+  description: 'Bienvenidos a nuestro espacio de arte.',
   icons: {
     icon: '/favicon.ico',
   },
