@@ -35,13 +35,32 @@
   padding: 20px;
 }
 
+@media (max-width: 600px) {
+  .dialogActions {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+  }
+  .actionButton {
+    width: 100% !important;
+    max-width: 250px !important;
+    margin: 0 !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+
 .actionButton {
   padding: 12px 24px !important;
   border-radius: 8px !important;
   font-weight: bold !important;
   font-size: 14px !important;
   min-width: 140px !important;
-  transition: all 0.3s ease !important;
+  transition: all 0.25s ease !important;
 }
 
 .primaryButton {
