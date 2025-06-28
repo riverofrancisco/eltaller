@@ -71,21 +71,27 @@ export default function Welcome() {
           <IconButton
             href="https://www.instagram.com/eltaller.espaciodearte/"
             target="_blank"
-            className={styles.socialIcon}
+            sx={{
+              color: 'black',
+            }}
           >
             <InstagramIcon />
           </IconButton>
           <IconButton
             href="https://www.facebook.com/eltaller.espaciodearte"
             target="_blank"
-            className={styles.socialIcon}
+            sx={{
+              color: 'black',
+            }}
           >
             <FacebookRoundedIcon />
           </IconButton>
           <IconButton
             href="https://www.youtube.com/@eltaller.espaciodearte"
             target="_blank"
-            className={styles.socialIcon}
+            sx={{
+              color: 'black',
+            }}
           >
             <YouTubeIcon />
           </IconButton>
