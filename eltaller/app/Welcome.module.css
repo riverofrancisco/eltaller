@@ -18,7 +18,9 @@
   align-items: center;
   text-align: center;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
+  padding-bottom: 20px;
   animation: colorChange 6s infinite;
 }
 
@@ -28,7 +30,7 @@
   align-items: center;
   text-align: center;
   width: 90%;
-  max-width: 600px;
+
   margin: 0 auto;
 }
 

@@ -30,6 +30,8 @@ import AlertDialog from '@/components/Dialogs/EventInfoDialog';
 import LibraryMusicRoundedIcon from '@mui/icons-material/LibraryMusicRounded';
 import IconButton from '@mui/material/IconButton';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import ActivityCard from '@/components/ui/cards/ActivityCard';
+import activities from '@/mock/activities.json';
 
 export default function Welcome() {
   const handleOption1Click = () => {
@@ -68,6 +70,15 @@ export default function Welcome() {
             margin: '5px 0 15px 0',
           }}
         >
+           <IconButton
+            href="https://api.whatsapp.com/send?phone=541122509184"
+            target="_blank"
+            sx={{
+              color: 'black',
+            }}
+          >
+            <WhatsAppIcon />
+          </IconButton>
           <IconButton
             href="https://www.instagram.com/eltaller.espaciodearte/"
             target="_blank"
@@ -95,10 +106,19 @@ export default function Welcome() {
           >
             <YouTubeIcon />
           </IconButton>
+            <IconButton
+            href="https://maps.app.goo.gl/XzDtU67PiLhYYVVG7"
+            target="_blank"
+            sx={{
+              color: 'black',
+            }}
+          >
+            <LocationOnIcon />
+          </IconButton>
         </div>
 
         <div className={styles.links}>
-          <AlertDialog
+ {/*          <AlertDialog
             title="KARAOKETÓN 29/06"
             dialogTitle="KARAOKETÓN"
             option1="Quiero cantar"
@@ -107,25 +127,24 @@ export default function Welcome() {
             option2Icon={<VolunteerActivismIcon />}
             onOption1Click={handleOption1Click}
             onOption2Click={handleOption2Click}
-          />
+          /> */}
 
-          <a
-            href="https://api.whatsapp.com/send?phone=541122509184"
-            target="_blank"
-            className={styles.link}
-          >
-            Escribinos
-            <WhatsAppIcon />
-          </a>
-
-          <a
-            href="https://maps.app.goo.gl/XzDtU67PiLhYYVVG7"
-            target="_blank"
-            className={styles.link}
-          >
-            Donde estamos
-            <LocationOnIcon />
-          </a>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+            gap: '12px',
+            marginTop: 12,
+            width: '100%',
+          }}>
+            {activities.map((a: any, idx: number) => (
+              <ActivityCard
+                key={idx}
+                title={a.title}
+                description={a.description}
+                color={a.color}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
