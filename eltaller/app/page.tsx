@@ -26,17 +26,18 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import AddBoxIcon from '@mui/icons-material/AddBox';
-import AlertDialog from '@/components/Dialogs/EventInfoDialog';
+import ContactInfoDialog from '@/components/Dialogs/ContactInfoDialog';
 import LibraryMusicRoundedIcon from '@mui/icons-material/LibraryMusicRounded';
+import CloseIcon from '@mui/icons-material/Close';
+import DoneIcon from '@mui/icons-material/Done';
 import IconButton from '@mui/material/IconButton';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import ActivityCard from '@/components/ui/cards/ActivityCard';
+import activities from '@/mock/activities.json';
 
 export default function Welcome() {
   const handleOption1Click = () => {
-    window.open(
-      'https://drive.google.com/file/d/1joPflGmy9tPJuYyynJ2z-DKksWjcMLId/view?usp=sharing',
-      '_blank'
-    );
+    console.log('Option 1 clicked');
   };
 
   const handleOption2Click = () => {
@@ -69,6 +70,15 @@ export default function Welcome() {
           }}
         >
           <IconButton
+            href="https://api.whatsapp.com/send?phone=541122509184"
+            target="_blank"
+            sx={{
+              color: 'black',
+            }}
+          >
+            <WhatsAppIcon />
+          </IconButton>
+          <IconButton
             href="https://www.instagram.com/eltaller.espaciodearte/"
             target="_blank"
             sx={{
@@ -95,37 +105,47 @@ export default function Welcome() {
           >
             <YouTubeIcon />
           </IconButton>
+          <IconButton
+            href="https://maps.app.goo.gl/XzDtU67PiLhYYVVG7"
+            target="_blank"
+            sx={{
+              color: 'black',
+            }}
+          >
+            <LocationOnIcon />
+          </IconButton>
         </div>
 
         <div className={styles.links}>
-          <AlertDialog
-            title="KARAOKETÓN 29/06"
-            dialogTitle="KARAOKETÓN"
-            option1="Quiero cantar"
-            option1Icon={<LibraryMusicRoundedIcon />}
-            option2="Quiero Contribuir"
-            option2Icon={<VolunteerActivismIcon />}
-            onOption1Click={handleOption1Click}
-            onOption2Click={handleOption2Click}
+
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+            gap: '12px',
+            marginTop: 12,
+            width: '100%',
+          }}>
+            {activities.map((a: any, idx: number) => (
+              <ActivityCard
+                key={idx}
+                title={a.title}
+                description={a.description}
+                color={a.color}
+              />
+            ))}
+          </div>
+          <ContactInfoDialog
+            title="Quiero saber más"
+            dialogTitle="Contanos qué te interesa"
+            action1="Cancelar"
+            action1Icon={<CloseIcon />}
+            action2="Enviar"
+            action2Icon={<DoneIcon />}
+            dialogOptions={["CANTO", 'INSTRUMENTO', 'ENSAMBLE', 'OTROS']}
+            onAction1Click={handleOption1Click}
+            onAction2Click={handleOption2Click}
           />
-
-          <a
-            href="https://api.whatsapp.com/send?phone=541122509184"
-            target="_blank"
-            className={styles.link}
-          >
-            Escribinos
-            <WhatsAppIcon />
-          </a>
-
-          <a
-            href="https://maps.app.goo.gl/XzDtU67PiLhYYVVG7"
-            target="_blank"
-            className={styles.link}
-          >
-            Donde estamos
-            <LocationOnIcon />
-          </a>
         </div>
       </div>
     </div>
