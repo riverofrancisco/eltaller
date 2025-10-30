@@ -31,9 +31,9 @@ export default function ActivityCard(props: ActivityCardProps) {
                 id="panel-header"
                 sx={{ padding: '12px 16px', backgroundColor: `${color},1)` }}
             >
-                <Typography color='inherit' style={{ margin: 0, fontSize: '1.05rem' }}>{title}</Typography>
+                <Typography color='inherit' fontWeight={'bold'} style={{ margin: 0, fontSize: '1.05rem' }}>{title}</Typography>
             </AccordionSummary>
-            <AccordionDetails sx={{ padding: '12px 16px', backgroundColor: `${color},0.5)`, height: '100%' }}>
+            <AccordionDetails sx={{ padding: '22px 26px', backgroundColor: `${color},0.5)`, height: '100%' }}>
                 <Typography style={{ margin: 0, textAlign: 'justify', lineHeight: 1.5 }}>{description}</Typography>
             </AccordionDetails>
         </Accordion>
