@@ -10,10 +10,10 @@ import mockData from "@/data/mock.json";
 export default async function HomePage({
   params,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 }) {
   const resolvedParams = await params;
-  const dict = await getDictionary(resolvedParams.lang);
+  const dict = await getDictionary(resolvedParams.lang as Locale);
   const { site, clases, docentes, testimonios } = mockData;
 
   return (
@@ -84,7 +84,7 @@ export default async function HomePage({
                   dict={claseDict}
                   clasesDict={dict.clases}
                   whatsapp={site.whatsapp}
-                  lang={resolvedParams.lang}
+                  lang={resolvedParams.lang as Locale}
                 />
               );
             })}

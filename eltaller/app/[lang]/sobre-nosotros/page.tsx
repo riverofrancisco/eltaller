@@ -5,10 +5,10 @@ import type { Metadata } from "next";
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const resolvedParams = await params;
-  const dict = await getDictionary(resolvedParams.lang);
+  const dict = await getDictionary(resolvedParams.lang as Locale);
   return {
     title: dict.sobreNosotros.titulo,
     description: dict.sobreNosotros.descripcion,
@@ -18,10 +18,10 @@ export async function generateMetadata({
 export default async function SobreNosotrosPage({
   params,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 }) {
   const resolvedParams = await params;
-  const dict = await getDictionary(resolvedParams.lang);
+  const dict = await getDictionary(resolvedParams.lang as Locale);
   const { sobreNosotros } = dict;
 
   return (
