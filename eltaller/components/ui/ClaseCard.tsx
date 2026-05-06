@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Music, Clock, Users } from "lucide-react";
+import { IconMusic, IconClock, IconUsers } from "@tabler/icons-react";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
 type ClaseItem = {
@@ -45,7 +45,7 @@ export default function ClaseCard({
       <div className="card-body gap-3">
         {/* Icon */}
         <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-          <Music className="text-primary" size={22} />
+          <IconMusic className="text-primary" size={22} stroke={1.5} />
         </div>
 
         {/* Title */}
@@ -61,11 +61,11 @@ export default function ClaseCard({
         {/* Meta info */}
         <div className="flex flex-wrap gap-2 mt-1">
           <span className="badge badge-ghost gap-1 text-xs font-semibold">
-            <Clock size={11} />
+            <IconClock size={11} stroke={1.5} />
             {clase.duracion}
           </span>
           <span className="badge badge-ghost gap-1 text-xs font-semibold">
-            <Users size={11} />
+            <IconUsers size={11} stroke={1.5} />
             {clasesDict.modalidades[clase.modalidad]}
           </span>
           {clase.nivel.map((n) => (

@@ -4,7 +4,7 @@ import ClaseCard from "@/components/ui/ClaseCard";
 import DocenteCard from "@/components/ui/DocenteCard";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import Link from "next/link";
-import { ArrowRight, Star } from "lucide-react";
+import { IconArrowRight, IconStarFilled } from "@tabler/icons-react";
 import mockData from "@/data/mock.json";
 
 export default async function HomePage({
@@ -42,7 +42,7 @@ export default async function HomePage({
                 className="btn btn-primary rounded-full btn-lg font-bold shadow-lg hover:shadow-primary/30 hover:-translate-y-0.5 transition-all duration-200 gap-2"
               >
                 {dict.hero.cta}
-                <ArrowRight size={18} />
+                <IconArrowRight size={18} stroke={1.5} />
               </Link>
               <WhatsAppButton
                 phone={site.whatsapp}
@@ -67,7 +67,7 @@ export default async function HomePage({
               href={`/${params.lang}/clases`}
               className="btn btn-ghost btn-sm text-primary gap-1 font-bold"
             >
-              {dict.learnMore} <ArrowRight size={14} />
+              {dict.learnMore} <IconArrowRight size={14} stroke={1.5} />
             </Link>
           </div>
 
@@ -94,7 +94,7 @@ export default async function HomePage({
               href={`/${params.lang}/clases`}
               className="btn btn-outline btn-primary rounded-full font-bold gap-2"
             >
-              {dict.clases.titulo} <ArrowRight size={16} />
+              {dict.clases.titulo} <IconArrowRight size={16} stroke={1.5} />
             </Link>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default async function HomePage({
                 href={`/${params.lang}/sobre-nosotros`}
                 className="btn btn-primary rounded-full font-bold mt-6 gap-2"
               >
-                {dict.learnMore} <ArrowRight size={16} />
+                {dict.learnMore} <IconArrowRight size={16} stroke={1.5} />
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -167,7 +167,7 @@ export default async function HomePage({
               href={`/${params.lang}/docentes`}
               className="btn btn-outline btn-primary rounded-full font-bold gap-2"
             >
-              {dict.docentes.titulo} <ArrowRight size={16} />
+              {dict.docentes.titulo} <IconArrowRight size={16} stroke={1.5} />
             </Link>
           </div>
         </div>
@@ -189,7 +189,7 @@ export default async function HomePage({
                 <div className="card-body gap-3">
                   <div className="flex gap-1">
                     {Array.from({ length: t.stars }).map((_, i) => (
-                      <Star
+                      <IconStarFilled
                         key={i}
                         size={14}
                         className="text-warning fill-warning"

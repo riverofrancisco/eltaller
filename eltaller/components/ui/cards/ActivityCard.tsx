@@ -1,9 +1,4 @@
 import React from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Typography } from '@mui/material';
 
 interface ActivityCardProps {
     title: string;
@@ -12,30 +7,16 @@ interface ActivityCardProps {
     color?: string;
 }
 
-export default function ActivityCard(props: ActivityCardProps) {
-    const { title, description, color } = props;
-
-    const accordionStyle: React.CSSProperties = {
-
-        borderRadius: '12px',
-        margin: '8px 0',
-        overflow: 'hidden',
-        background: 'none'
-    };
-
+export default function ActivityCard({ title, description, color }: ActivityCardProps) {
     return (
-        <Accordion style={accordionStyle} elevation={0}>
-            <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel-content"
-                id="panel-header"
-                sx={{ padding: '12px 16px', backgroundColor: `${color},1)` }}
-            >
-                <Typography color='inherit' fontWeight={'bold'} style={{ margin: 0, fontSize: '1.05rem' }}>{title}</Typography>
-            </AccordionSummary>
-            <AccordionDetails sx={{ padding: '22px 26px', backgroundColor: `${color},0.5)`, height: '100%' }}>
-                <Typography style={{ margin: 0, textAlign: 'justify', lineHeight: 1.5 }}>{description}</Typography>
-            </AccordionDetails>
-        </Accordion>
+        <div className="collapse collapse-arrow bg-base-100 rounded-xl mb-2 overflow-hidden shadow-sm border border-base-200" style={{ borderColor: color }}>
+            <input type="checkbox" /> 
+            <div className="collapse-title text-lg font-bold" style={{ backgroundColor: `${color}1A`, color: '#333' }}>
+                {title}
+            </div>
+            <div className="collapse-content" style={{ backgroundColor: `${color}0D` }}>
+                <p className="mt-4 text-base-content/80 text-justify leading-relaxed">{description}</p>
+            </div>
+        </div>
     );
 }

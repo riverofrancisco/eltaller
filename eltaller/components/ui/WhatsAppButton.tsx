@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MessageCircle } from "lucide-react";
+import { IconBrandWhatsapp } from "@tabler/icons-react";
 
 interface WhatsAppButtonProps {
   phone: string;
@@ -32,7 +32,7 @@ export default function WhatsAppButton({
       rel="noreferrer"
       className={`btn btn-success gap-2 rounded-full font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 ${sizeClass} ${className}`}
     >
-      <MessageCircle size={18} />
+      <IconBrandWhatsapp size={18} stroke={1.5} />
       {label}
     </a>
   );

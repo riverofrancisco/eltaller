@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { IconMenu2, IconX } from "@tabler/icons-react";
 import type { Locale } from "@/lib/getDictionary";
 
 type NavDict = {
@@ -79,7 +79,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Abrir menú"
           >
-            {menuOpen ? <X size={22} /> : <Menu size={22} />}
+            {menuOpen ? <IconX size={22} stroke={1.5} /> : <IconMenu2 size={22} stroke={1.5} />}
           </button>
         </div>
       </div>

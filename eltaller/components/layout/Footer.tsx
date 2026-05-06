@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import { IconBrandInstagram, IconBrandFacebook, IconMail, IconPhone, IconMapPin } from "@tabler/icons-react";
 import type { Locale } from "@/lib/getDictionary";
 import siteData from "@/data/mock.json";
 
@@ -48,7 +48,7 @@ export default function Footer({ lang, dict, nav }: FooterProps) {
                   className="btn btn-circle btn-ghost btn-sm hover:text-primary transition-colors"
                   aria-label="Instagram"
                 >
-                  <Instagram size={18} />
+                  <IconBrandInstagram size={18} stroke={1.5} />
                 </a>
               )}
               {site.facebook && (
@@ -59,7 +59,7 @@ export default function Footer({ lang, dict, nav }: FooterProps) {
                   className="btn btn-circle btn-ghost btn-sm hover:text-primary transition-colors"
                   aria-label="Facebook"
                 >
-                  <Facebook size={18} />
+                  <IconBrandFacebook size={18} stroke={1.5} />
                 </a>
               )}
             </div>
@@ -98,17 +98,17 @@ export default function Footer({ lang, dict, nav }: FooterProps) {
             </h3>
             <ul className="flex flex-col gap-3 text-sm text-neutral-content/80">
               <li className="flex items-center gap-2">
-                <MapPin size={15} className="text-primary shrink-0" />
+                <IconMapPin size={15} stroke={1.5} className="text-primary shrink-0" />
                 {site.address}
               </li>
               <li className="flex items-center gap-2">
-                <Phone size={15} className="text-primary shrink-0" />
+                <IconPhone size={15} stroke={1.5} className="text-primary shrink-0" />
                 <a href={`tel:${site.phone}`} className="hover:text-primary transition-colors">
                   {site.phone}
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <Mail size={15} className="text-primary shrink-0" />
+                <IconMail size={15} stroke={1.5} className="text-primary shrink-0" />
                 <a href={`mailto:${site.email}`} className="hover:text-primary transition-colors">
                   {site.email}
                 </a>

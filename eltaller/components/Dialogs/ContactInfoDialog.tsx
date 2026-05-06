@@ -1,18 +1,6 @@
 'use client';
 import * as React from 'react';
-import Button from '@mui/material/Button';
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
-import TextField from '@mui/material/TextField';
-import AddBoxIcon from '@mui/icons-material/AddBox';
-
-import styles from './ContactInfoDialog.module.css';
-import FormGroup from '@mui/material/FormGroup/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
+import { IconSquarePlus } from '@tabler/icons-react';
 
 interface AlertDialogProps {
   title: string;
@@ -28,138 +16,88 @@ interface AlertDialogProps {
 }
 
 export default function ContactInfoDialog(props: AlertDialogProps) {
-  const [open, setOpen] = React.useState(false);
   const [email, setEmail] = React.useState('');
-  const [selectedOptions, setSelectedOptions] = React.useState(['']);
+  const [selectedOptions, setSelectedOptions] = React.useState<string[]>(['']);
+  
+  const dialogRef = React.useRef<HTMLDialogElement>(null);
 
   const handleClickOpen = () => {
-    setOpen(true);
+    dialogRef.current?.showModal();
   };
 
   const handleClose1 = () => {
-    setOpen(false);
+    dialogRef.current?.close();
     props.onAction1Click();
   };
 
   const handleClose2 = () => {
-    setOpen(false);
+    dialogRef.current?.close();
     props.onAction2Click();
   };
 
   return (
-    <React.Fragment>
-      <Button
-        className={styles.link}
+    <>
+      <button
         onClick={handleClickOpen}
-        sx={{
-          textDecoration: 'none',
-          backgroundColor: 'none',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          color: '#333',
-          padding: '15px 20px',
-          borderRadius: '12px',
-          fontWeight: 'bold',
-          fontSize: '16px',
-          transition: 'all 0.3s ease',
-          boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.15)',
-          border: 'none',
-          width: '100%',
-          cursor: 'pointer',
-          '&:hover': {
-            transform: 'translateY(-2px)',
-            boxShadow: '0px 6px 16px rgba(0, 0, 0, 0.2)',
-          },
-        }}
+        className="btn btn-ghost w-full justify-between items-center bg-base-100 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all text-base-content rounded-xl h-14 border border-base-200"
       >
-        {props.title}
-        <AddBoxIcon />
-      </Button>
-      <Dialog
-        open={open}
-        onClose={() => setOpen(false)}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
-        PaperProps={{
-          sx: {
-            borderRadius: '16px',
-            padding: '10px',
-            maxWidth: '400px',
-            textAlign: 'center',
-          },
-        }}
-      >
-        <DialogTitle
-          id="alert-dialog-title"
-          sx={{
-            fontSize: '20px',
-            fontWeight: 'bold',
-            color: '#333',
-            textAlign: 'center',
-            paddingBottom: '10px',
-          }}
-        >
-          {props.dialogTitle}
-        </DialogTitle>
-        <DialogContent className={styles.dialogContent}>
+        <span className="font-bold text-base">{props.title}</span>
+        <IconSquarePlus />
+      </button>
+
+      <dialog ref={dialogRef} className="modal modal-bottom sm:modal-middle">
+        <div className="modal-box bg-base-100 rounded-2xl text-center">
+          <h3 className="font-bold text-xl text-base-content mb-2">{props.dialogTitle}</h3>
+          
           {props.dialogContent && (
-            <DialogContentText sx={{ color: '#666', fontSize: '16px' }}>
-              {props.dialogContent}
-            </DialogContentText>
+            <p className="py-2 text-base-content/70">{props.dialogContent}</p>
           )}
+
           {props.dialogOptions && (
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))',
-              
-              gap: '12px',
-              marginTop: 12,
-              width: '100%',
-            }}>
+            <div className="grid grid-cols-2 gap-3 my-4">
               {props.dialogOptions.map((option, index) => (
-                <FormGroup key={index}>
-                  <FormControlLabel control={<Checkbox defaultChecked />} onChange={() => {
-                    if (selectedOptions.includes(option)) {
-                      setSelectedOptions(selectedOptions.filter((o) => o !== option));
-                    } else {
-                      setSelectedOptions([...selectedOptions, option]);
-                    }
-                  }} checked={selectedOptions.includes(option)} label={option} />
-           
-                </FormGroup>
+                <label key={index} className="label cursor-pointer justify-start gap-3 bg-base-200/50 p-2 rounded-lg border border-base-200">
+                  <input 
+                    type="checkbox" 
+                    className="checkbox checkbox-primary checkbox-sm"
+                    checked={selectedOptions.includes(option)}
+                    onChange={() => {
+                      if (selectedOptions.includes(option)) {
+                        setSelectedOptions(selectedOptions.filter((o) => o !== option));
+                      } else {
+                        setSelectedOptions([...selectedOptions, option]);
+                      }
+                    }}
+                  />
+                  <span className="label-text font-medium">{option}</span>
+                </label>
               ))}
             </div>
           )}
 
-          <TextField fullWidth margin="normal" size='small' variant="outlined" label="Tu mail">
+          <div className="form-control w-full mt-4">
             <input
               type="email"
-              id="email"
+              placeholder="Tu mail"
+              className="input input-bordered w-full"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-          </TextField>
+          </div>
 
-        </DialogContent>
-        <DialogActions className={styles.dialogActions}>
-          <Button
-            onClick={handleClose1}
-            className={`${styles.actionButton} ${styles.secondaryButton}`}
-            startIcon={props.action1Icon}
-          >
-            {props.action1}
-          </Button>
-          <Button
-            onClick={handleClose2}
-            autoFocus
-            className={`${styles.actionButton} ${styles.primaryButton}`}
-            startIcon={props.action2Icon}
-          >
-            {props.action2}
-          </Button>
-        </DialogActions>
-      </Dialog>
-    </React.Fragment>
+          <div className="modal-action justify-center gap-3 mt-6">
+            <button className="btn btn-outline" onClick={handleClose1}>
+              {props.action1Icon} {props.action1}
+            </button>
+            <button className="btn btn-primary" onClick={handleClose2}>
+              {props.action2Icon} {props.action2}
+            </button>
+          </div>
+        </div>
+        <form method="dialog" className="modal-backdrop">
+          <button>cerrar</button>
+        </form>
+      </dialog>
+    </>
   );
 }

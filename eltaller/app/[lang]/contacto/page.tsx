@@ -1,7 +1,7 @@
 import { getDictionary, type Locale } from "@/lib/getDictionary";
 import SectionTitle from "@/components/ui/SectionTitle";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { IconMail, IconPhone, IconMapPin } from "@tabler/icons-react";
 import type { Metadata } from "next";
 import mockData from "@/data/mock.json";
 
@@ -54,7 +54,7 @@ export default async function ContactoPage({
                 href={`mailto:${site.email}`}
                 className="btn btn-outline btn-primary rounded-full w-full gap-2"
               >
-                <Mail size={16} />
+                <IconMail size={16} stroke={1.5} />
                 {dict.contacto.emailCta}
               </a>
             </div>
@@ -69,7 +69,7 @@ export default async function ContactoPage({
             </h3>
             <ul className="flex flex-col gap-4">
               <li className="flex items-start gap-3">
-                <MapPin className="text-primary mt-1 shrink-0" size={18} />
+                <IconMapPin className="text-primary mt-1 shrink-0" size={18} stroke={1.5} />
                 <div>
                   <p className="font-semibold text-sm text-base-content/50 uppercase tracking-wider">
                     {dict.contacto.direccion}
@@ -78,7 +78,7 @@ export default async function ContactoPage({
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="text-primary mt-1 shrink-0" size={18} />
+                <IconPhone className="text-primary mt-1 shrink-0" size={18} stroke={1.5} />
                 <div>
                   <p className="font-semibold text-sm text-base-content/50 uppercase tracking-wider">
                     {dict.contacto.telefono}
@@ -89,7 +89,7 @@ export default async function ContactoPage({
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Mail className="text-primary mt-1 shrink-0" size={18} />
+                <IconMail className="text-primary mt-1 shrink-0" size={18} stroke={1.5} />
                 <div>
                   <p className="font-semibold text-sm text-base-content/50 uppercase tracking-wider">
                     {dict.contacto.email}

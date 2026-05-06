@@ -1,4 +1,4 @@
-import { User } from "lucide-react";
+import { IconUser } from "@tabler/icons-react";
 
 type Docente = {
   id: string;
@@ -21,7 +21,7 @@ export default function DocenteCard({ docente, clasesItems }: DocenteCardProps) 
         {/* Avatar */}
         <div className="avatar placeholder">
           <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-secondary text-primary-content ring-4 ring-primary/20">
-            <User size={36} className="m-auto mt-5" />
+            <IconUser size={36} stroke={1.5} className="m-auto mt-5" />
           </div>
         </div>
 

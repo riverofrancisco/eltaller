@@ -1,6 +1,6 @@
 import { getDictionary, type Locale } from "@/lib/getDictionary";
 import SectionTitle from "@/components/ui/SectionTitle";
-import { Calendar } from "lucide-react";
+import { IconCalendar } from "@tabler/icons-react";
 import type { Metadata } from "next";
 import mockData from "@/data/mock.json";
 
@@ -61,7 +61,7 @@ export default async function ActividadesPage({
               )}
               <div className="card-body gap-3">
                 <div className="flex items-center gap-2 text-sm text-base-content/50 font-semibold">
-                  <Calendar size={14} className="text-primary" />
+                  <IconCalendar size={14} stroke={1.5} className="text-primary" />
                   {fechaStr}
                   {actividad.destacada && (
                     <span className="badge badge-primary badge-sm ml-auto">
