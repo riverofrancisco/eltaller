@@ -7,9 +7,10 @@ import mockData from "@/data/mock.json";
 export async function generateMetadata({
   params,
 }: {
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 }): Promise<Metadata> {
-  const dict = await getDictionary(params.lang);
+  const resolvedParams = await params;
+  const dict = await getDictionary(resolvedParams.lang);
   return {
     title: dict.clases.titulo,
     description: dict.clases.descripcion,
@@ -19,9 +20,10 @@ export async function generateMetadata({
 export default async function ClasesPage({
   params,
 }: {
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 }) {
-  const dict = await getDictionary(params.lang);
+  const resolvedParams = await params;
+  const dict = await getDictionary(resolvedParams.lang);
   const { site, clases } = mockData;
 
   return (
@@ -47,7 +49,7 @@ export default async function ClasesPage({
               dict={claseDict}
               clasesDict={dict.clases}
               whatsapp={site.whatsapp}
-              lang={params.lang}
+              lang={resolvedParams.lang}
             />
           );
         })}

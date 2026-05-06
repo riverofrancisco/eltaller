@@ -10,9 +10,10 @@ import mockData from "@/data/mock.json";
 export default async function HomePage({
   params,
 }: {
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 }) {
-  const dict = await getDictionary(params.lang);
+  const resolvedParams = await params;
+  const dict = await getDictionary(resolvedParams.lang);
   const { site, clases, docentes, testimonios } = mockData;
 
   return (
@@ -38,7 +39,7 @@ export default async function HomePage({
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
-                href={`/${params.lang}/clases`}
+                href={`/${resolvedParams.lang}/clases`}
                 className="btn btn-primary rounded-full btn-lg font-bold shadow-lg hover:shadow-primary/30 hover:-translate-y-0.5 transition-all duration-200 gap-2"
               >
                 {dict.hero.cta}
@@ -64,7 +65,7 @@ export default async function HomePage({
               align="left"
             />
             <Link
-              href={`/${params.lang}/clases`}
+              href={`/${resolvedParams.lang}/clases`}
               className="btn btn-ghost btn-sm text-primary gap-1 font-bold"
             >
               {dict.learnMore} <IconArrowRight size={14} stroke={1.5} />
@@ -83,7 +84,7 @@ export default async function HomePage({
                   dict={claseDict}
                   clasesDict={dict.clases}
                   whatsapp={site.whatsapp}
-                  lang={params.lang}
+                  lang={resolvedParams.lang}
                 />
               );
             })}
@@ -91,7 +92,7 @@ export default async function HomePage({
 
           <div className="text-center mt-8">
             <Link
-              href={`/${params.lang}/clases`}
+              href={`/${resolvedParams.lang}/clases`}
               className="btn btn-outline btn-primary rounded-full font-bold gap-2"
             >
               {dict.clases.titulo} <IconArrowRight size={16} stroke={1.5} />
@@ -117,7 +118,7 @@ export default async function HomePage({
                 {dict.sobreNosotros.mision}
               </p>
               <Link
-                href={`/${params.lang}/sobre-nosotros`}
+                href={`/${resolvedParams.lang}/sobre-nosotros`}
                 className="btn btn-primary rounded-full font-bold mt-6 gap-2"
               >
                 {dict.learnMore} <IconArrowRight size={16} stroke={1.5} />
@@ -164,7 +165,7 @@ export default async function HomePage({
           </div>
           <div className="text-center mt-8">
             <Link
-              href={`/${params.lang}/docentes`}
+              href={`/${resolvedParams.lang}/docentes`}
               className="btn btn-outline btn-primary rounded-full font-bold gap-2"
             >
               {dict.docentes.titulo} <IconArrowRight size={16} stroke={1.5} />
@@ -177,7 +178,7 @@ export default async function HomePage({
       <section className="section-padding bg-gradient-to-br from-primary/10 to-secondary/10">
         <div className="container-max">
           <SectionTitle
-            titulo={params.lang === "es" ? "Lo que dicen nuestros alumnos" : "What our students say"}
+            titulo={resolvedParams.lang === "es" ? "Lo que dicen nuestros alumnos" : "What our students say"}
             className="mb-10"
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -211,12 +212,12 @@ export default async function HomePage({
       <section className="section-padding bg-neutral text-neutral-content text-center">
         <div className="container-max max-w-2xl">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-primary">
-            {params.lang === "es"
+            {resolvedParams.lang === "es"
               ? "¿Listo para empezar?"
               : "Ready to start?"}
           </h2>
           <p className="text-neutral-content/70 mb-8 text-lg">
-            {params.lang === "es"
+            {resolvedParams.lang === "es"
               ? "Escribinos por WhatsApp y te contamos todo sobre nuestras clases."
               : "Message us on WhatsApp and we'll tell you everything about our classes."}
           </p>

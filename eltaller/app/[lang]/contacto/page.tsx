@@ -8,9 +8,10 @@ import mockData from "@/data/mock.json";
 export async function generateMetadata({
   params,
 }: {
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 }): Promise<Metadata> {
-  const dict = await getDictionary(params.lang);
+  const resolvedParams = await params;
+  const dict = await getDictionary(resolvedParams.lang);
   return {
     title: dict.contacto.titulo,
     description: dict.contacto.descripcion,
@@ -20,9 +21,10 @@ export async function generateMetadata({
 export default async function ContactoPage({
   params,
 }: {
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 }) {
-  const dict = await getDictionary(params.lang);
+  const resolvedParams = await params;
+  const dict = await getDictionary(resolvedParams.lang);
   const { site } = mockData;
 
   return (
@@ -41,7 +43,7 @@ export default async function ContactoPage({
         <div className="card bg-base-100 shadow-md border border-base-300">
           <div className="card-body gap-6">
             <h3 className="font-extrabold text-xl text-base-content">
-              {params.lang === "es" ? "Escribinos" : "Get in touch"}
+              {resolvedParams.lang === "es" ? "Escribinos" : "Get in touch"}
             </h3>
             <div className="flex flex-col gap-4">
               <WhatsAppButton
@@ -65,7 +67,7 @@ export default async function ContactoPage({
         <div className="card bg-base-200 border border-base-300">
           <div className="card-body gap-5">
             <h3 className="font-extrabold text-xl text-base-content">
-              {params.lang === "es" ? "Información" : "Information"}
+              {resolvedParams.lang === "es" ? "Información" : "Information"}
             </h3>
             <ul className="flex flex-col gap-4">
               <li className="flex items-start gap-3">

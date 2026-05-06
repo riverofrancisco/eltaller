@@ -7,15 +7,16 @@ export default async function LangLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 }) {
-  const dict = await getDictionary(params.lang);
+  const resolvedParams = await params;
+  const dict = await getDictionary(resolvedParams.lang);
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar lang={params.lang} dict={dict.nav} />
+      <Navbar lang={resolvedParams.lang} dict={dict.nav} />
       <main className="flex-1">{children}</main>
-      <Footer lang={params.lang} dict={dict.footer} nav={dict.nav} />
+      <Footer lang={resolvedParams.lang} dict={dict.footer} nav={dict.nav} />
     </div>
   );
 }

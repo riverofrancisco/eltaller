@@ -7,9 +7,10 @@ import mockData from "@/data/mock.json";
 export async function generateMetadata({
   params,
 }: {
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 }): Promise<Metadata> {
-  const dict = await getDictionary(params.lang);
+  const resolvedParams = await params;
+  const dict = await getDictionary(resolvedParams.lang);
   return {
     title: dict.actividades.titulo,
     description: dict.actividades.descripcion,
@@ -19,9 +20,10 @@ export async function generateMetadata({
 export default async function ActividadesPage({
   params,
 }: {
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 }) {
-  const dict = await getDictionary(params.lang);
+  const resolvedParams = await params;
+  const dict = await getDictionary(resolvedParams.lang);
   const { actividades } = mockData;
 
   return (
@@ -43,7 +45,7 @@ export default async function ActividadesPage({
             ];
           const fecha = new Date(actividad.fecha);
           const fechaStr = fecha.toLocaleDateString(
-            params.lang === "es" ? "es-AR" : "en-US",
+            resolvedParams.lang === "es" ? "es-AR" : "en-US",
             { year: "numeric", month: "long", day: "numeric" }
           );
 
@@ -65,7 +67,7 @@ export default async function ActividadesPage({
                   {fechaStr}
                   {actividad.destacada && (
                     <span className="badge badge-primary badge-sm ml-auto">
-                      {params.lang === "es" ? "Destacado" : "Featured"}
+                      {resolvedParams.lang === "es" ? "Destacado" : "Featured"}
                     </span>
                   )}
                 </div>
