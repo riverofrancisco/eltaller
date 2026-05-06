@@ -46,7 +46,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
             height={40}
             className="rounded-full shadow-sm border border-primary/20 bg-base-100"
           />
-          <span className="text-2xl font-extrabold text-primary group-hover:text-accent transition-colors duration-200">
+          <span className="text-2xl font-extrabold text-primary group-hover:text-black transition-colors duration-200">
             El Taller
           </span>
         </Link>
