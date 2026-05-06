@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import type { Locale } from "@/lib/getDictionary";
@@ -37,12 +38,16 @@ export default function Navbar({ lang, dict }: NavbarProps) {
     <nav className="navbar bg-base-100/90 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-primary/20">
       <div className="container-max w-full flex items-center justify-between px-4 md:px-8">
         {/* Logo */}
-        <Link href={`/${lang}`} className="flex items-center gap-2 group">
+        <Link href={`/${lang}`} className="flex items-center gap-3 group">
+          <Image
+            src="/images/logo.png"
+            alt="El Taller Logo"
+            width={40}
+            height={40}
+            className="rounded-full shadow-sm border border-primary/20 bg-base-100"
+          />
           <span className="text-2xl font-extrabold text-primary group-hover:text-accent transition-colors duration-200">
             El Taller
-          </span>
-          <span className="hidden sm:inline text-xs font-semibold text-base-content/50 tracking-widest uppercase mt-1">
-            Espacio de Arte
           </span>
         </Link>
 
