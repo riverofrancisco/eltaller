@@ -1,0 +1,109 @@
+{
+  "lang": "es",
+  "nav": {
+    "inicio": "Inicio",
+    "sobreNosotros": "Sobre nosotros",
+    "clases": "Clases",
+    "docentes": "Docentes",
+    "actividades": "Actividades",
+    "contacto": "Contacto"
+  },
+  "hero": {
+    "titulo": "Un espacio para crear, aprender y expresarte",
+    "subtitulo": "Clases de música para todas las edades y niveles. Guitarras, piano, canto, batería y más.",
+    "cta": "Conocé nuestras clases",
+    "ctaContacto": "Escribinos por WhatsApp"
+  },
+  "sobreNosotros": {
+    "titulo": "Sobre nosotros",
+    "subtitulo": "Somos El Taller",
+    "descripcion": "El Taller es un espacio de arte pensado para que cada persona encuentre su voz, su ritmo y su forma de expresarse. Nacimos con la convicción de que la música y las artes transforman vidas, y eso guía todo lo que hacemos.",
+    "mision": "Nuestra misión es brindar una educación artística de calidad, en un ambiente cálido, inclusivo y apasionado.",
+    "valores": [
+      { "titulo": "Pasión", "descripcion": "Amamos la música y eso se nota en cada clase." },
+      { "titulo": "Inclusión", "descripcion": "Abrimos las puertas a todos, sin importar la edad ni la experiencia." },
+      { "titulo": "Creatividad", "descripcion": "Fomentamos la expresión propia y el pensamiento creativo." },
+      { "titulo": "Comunidad", "descripcion": "Construimos lazos entre alumnos, docentes y familias." }
+    ]
+  },
+  "clases": {
+    "titulo": "Nuestras clases",
+    "subtitulo": "Encontrá el instrumento que te llama",
+    "descripcion": "Ofrecemos clases individuales y grupales para todas las edades y niveles. Para más información o inscribirte, contactanos por WhatsApp.",
+    "ctaInscripcion": "Inscribirse por WhatsApp",
+    "niveles": {
+      "principiante": "Principiante",
+      "intermedio": "Intermedio",
+      "avanzado": "Avanzado",
+      "niños": "Niños"
+    },
+    "modalidades": {
+      "individual": "Clase individual",
+      "grupal": "Clase grupal"
+    },
+    "items": {
+      "guitarra": {
+        "nombre": "Guitarra",
+        "descripcion": "Aprendé a tocar la guitarra desde cero o perfeccioná tu técnica. Eléctrica o acústica."
+      },
+      "piano": {
+        "nombre": "Piano",
+        "descripcion": "Desde lectura de notas hasta interpretación. Para niños y adultos."
+      },
+      "canto": {
+        "nombre": "Canto",
+        "descripcion": "Desarrollá tu voz, técnica vocal y confianza para cantar."
+      },
+      "bateria": {
+        "nombre": "Batería",
+        "descripcion": "Ritmo, coordinación y mucha energía. Clases adaptadas a tu nivel."
+      },
+      "bajo": {
+        "nombre": "Bajo",
+        "descripcion": "El bajo es la columna vertebral de la banda. Aprendé a sostener el groove."
+      },
+      "musica-inicial": {
+        "nombre": "Música Inicial",
+        "descripcion": "Para los más chiquitos. Introducción al mundo musical a través del juego."
+      }
+    }
+  },
+  "docentes": {
+    "titulo": "Nuestros docentes",
+    "subtitulo": "Un equipo apasionado y con experiencia",
+    "descripcion": "Nuestros docentes son músicos profesionales con vocación por la enseñanza. Cada uno aporta su propia experiencia y estilo para enriquecer el aprendizaje."
+  },
+  "actividades": {
+    "titulo": "Actividades",
+    "subtitulo": "Más allá de las clases",
+    "descripcion": "Organizamos recitales de alumnos, talleres especiales y eventos que hacen crecer a nuestra comunidad.",
+    "items": {
+      "recital-alumnos": {
+        "nombre": "Recital de alumnos",
+        "descripcion": "Un espacio para que los alumnos muestren todo lo aprendido ante familia y amigos."
+      },
+      "taller-ritmo": {
+        "nombre": "Taller de ritmo",
+        "descripcion": "Una jornada especial para explorar el ritmo con percusión y movimiento."
+      }
+    },
+    "proximamente": "Próximamente",
+    "verMas": "Ver más"
+  },
+  "contacto": {
+    "titulo": "Contacto",
+    "subtitulo": "¿Querés saber más?",
+    "descripcion": "Escribinos por WhatsApp o por mail y te respondemos a la brevedad.",
+    "whatsappCta": "Escribir por WhatsApp",
+    "emailCta": "Enviar un email",
+    "direccion": "Dirección",
+    "telefono": "Teléfono",
+    "email": "Email"
+  },
+  "footer": {
+    "derechos": "Todos los derechos reservados",
+    "descripcion": "El Taller — Espacio de Arte. Música para todas las edades."
+  },
+  "comingSoon": "Próximamente",
+  "learnMore": "Conocer más"
+}

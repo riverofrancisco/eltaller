@@ -1,0 +1,109 @@
+{
+  "lang": "en",
+  "nav": {
+    "inicio": "Home",
+    "sobreNosotros": "About us",
+    "clases": "Classes",
+    "docentes": "Teachers",
+    "actividades": "Activities",
+    "contacto": "Contact"
+  },
+  "hero": {
+    "titulo": "A space to create, learn and express yourself",
+    "subtitulo": "Music classes for all ages and levels. Guitar, piano, singing, drums and more.",
+    "cta": "Explore our classes",
+    "ctaContacto": "Message us on WhatsApp"
+  },
+  "sobreNosotros": {
+    "titulo": "About us",
+    "subtitulo": "We are El Taller",
+    "descripcion": "El Taller is an art space designed for each person to find their voice, their rhythm and their way of expressing themselves. We were born with the conviction that music and arts transform lives, and that guides everything we do.",
+    "mision": "Our mission is to provide quality arts education in a warm, inclusive and passionate environment.",
+    "valores": [
+      { "titulo": "Passion", "descripcion": "We love music and it shows in every class." },
+      { "titulo": "Inclusion", "descripcion": "We open our doors to everyone, regardless of age or experience." },
+      { "titulo": "Creativity", "descripcion": "We encourage personal expression and creative thinking." },
+      { "titulo": "Community", "descripcion": "We build bonds between students, teachers and families." }
+    ]
+  },
+  "clases": {
+    "titulo": "Our classes",
+    "subtitulo": "Find the instrument that calls you",
+    "descripcion": "We offer individual and group classes for all ages and levels. For more information or to enroll, contact us via WhatsApp.",
+    "ctaInscripcion": "Enroll via WhatsApp",
+    "niveles": {
+      "principiante": "Beginner",
+      "intermedio": "Intermediate",
+      "avanzado": "Advanced",
+      "niños": "Children"
+    },
+    "modalidades": {
+      "individual": "Individual class",
+      "grupal": "Group class"
+    },
+    "items": {
+      "guitarra": {
+        "nombre": "Guitar",
+        "descripcion": "Learn to play guitar from scratch or improve your technique. Electric or acoustic."
+      },
+      "piano": {
+        "nombre": "Piano",
+        "descripcion": "From reading notes to interpretation. For children and adults."
+      },
+      "canto": {
+        "nombre": "Singing",
+        "descripcion": "Develop your voice, vocal technique and confidence to sing."
+      },
+      "bateria": {
+        "nombre": "Drums",
+        "descripcion": "Rhythm, coordination and lots of energy. Classes adapted to your level."
+      },
+      "bajo": {
+        "nombre": "Bass",
+        "descripcion": "Bass is the backbone of the band. Learn to hold the groove."
+      },
+      "musica-inicial": {
+        "nombre": "Music for Kids",
+        "descripcion": "For the little ones. Introduction to the musical world through play."
+      }
+    }
+  },
+  "docentes": {
+    "titulo": "Our teachers",
+    "subtitulo": "A passionate and experienced team",
+    "descripcion": "Our teachers are professional musicians with a vocation for teaching. Each brings their own experience and style to enrich the learning experience."
+  },
+  "actividades": {
+    "titulo": "Activities",
+    "subtitulo": "Beyond the classes",
+    "descripcion": "We organize student recitals, special workshops and events that help our community grow.",
+    "items": {
+      "recital-alumnos": {
+        "nombre": "Student Recital",
+        "descripcion": "A space for students to show everything they've learned to family and friends."
+      },
+      "taller-ritmo": {
+        "nombre": "Rhythm Workshop",
+        "descripcion": "A special session to explore rhythm with percussion and movement."
+      }
+    },
+    "proximamente": "Coming soon",
+    "verMas": "See more"
+  },
+  "contacto": {
+    "titulo": "Contact",
+    "subtitulo": "Want to know more?",
+    "descripcion": "Message us on WhatsApp or by email and we'll get back to you as soon as possible.",
+    "whatsappCta": "Message on WhatsApp",
+    "emailCta": "Send an email",
+    "direccion": "Address",
+    "telefono": "Phone",
+    "email": "Email"
+  },
+  "footer": {
+    "derechos": "All rights reserved",
+    "descripcion": "El Taller — Art Space. Music for all ages."
+  },
+  "comingSoon": "Coming soon",
+  "learnMore": "Learn more"
+}

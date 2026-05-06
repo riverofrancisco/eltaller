@@ -1,0 +1,126 @@
+{
+  "site": {
+    "name": "El Taller",
+    "fullName": "El Taller — Espacio de Arte",
+    "tagline": "Un espacio para crear, aprender y expresarte",
+    "taglineEn": "A space to create, learn and express yourself",
+    "email": "info@eltallerespaciodearte.com.ar",
+    "phone": "+54 11 2250-9184",
+    "whatsapp": "541122509184",
+    "address": "Buenos Aires, Argentina",
+    "instagram": "https://www.instagram.com/eltaller.espaciodearte/",
+    "facebook": "https://www.facebook.com/eltaller.espaciodearte",
+    "youtube": "https://www.youtube.com/@eltaller.espaciodearte",
+    "mapsUrl": "https://maps.app.goo.gl/XzDtU67PiLhYYVVG7",
+    "domain": "https://eltallerespaciodearte.com.ar"
+  },
+  "clases": [
+    {
+      "id": "guitarra",
+      "slug": "guitarra",
+      "imagen": "/images/clases/guitarra.jpg",
+      "nivel": ["principiante", "intermedio", "avanzado"],
+      "duracion": "45 min",
+      "modalidad": "individual"
+    },
+    {
+      "id": "piano",
+      "slug": "piano",
+      "imagen": "/images/clases/piano.jpg",
+      "nivel": ["principiante", "intermedio", "avanzado"],
+      "duracion": "45 min",
+      "modalidad": "individual"
+    },
+    {
+      "id": "canto",
+      "slug": "canto",
+      "imagen": "/images/clases/canto.jpg",
+      "nivel": ["principiante", "intermedio"],
+      "duracion": "45 min",
+      "modalidad": "individual"
+    },
+    {
+      "id": "bateria",
+      "slug": "bateria",
+      "imagen": "/images/clases/bateria.jpg",
+      "nivel": ["principiante", "intermedio"],
+      "duracion": "45 min",
+      "modalidad": "individual"
+    },
+    {
+      "id": "bajo",
+      "slug": "bajo",
+      "imagen": "/images/clases/bajo.jpg",
+      "nivel": ["principiante", "intermedio"],
+      "duracion": "45 min",
+      "modalidad": "individual"
+    },
+    {
+      "id": "musica-inicial",
+      "slug": "musica-inicial",
+      "imagen": "/images/clases/musica-inicial.jpg",
+      "nivel": ["niños"],
+      "duracion": "30 min",
+      "modalidad": "grupal"
+    }
+  ],
+  "docentes": [
+    {
+      "id": "docente-1",
+      "nombre": "Nombre Docente",
+      "foto": "/images/docentes/docente-1.jpg",
+      "instrumentos": ["guitarra", "bajo"],
+      "email": ""
+    },
+    {
+      "id": "docente-2",
+      "nombre": "Nombre Docente",
+      "foto": "/images/docentes/docente-2.jpg",
+      "instrumentos": ["piano"],
+      "email": ""
+    },
+    {
+      "id": "docente-3",
+      "nombre": "Nombre Docente",
+      "foto": "/images/docentes/docente-3.jpg",
+      "instrumentos": ["canto"],
+      "email": ""
+    }
+  ],
+  "actividades": [
+    {
+      "id": "recital-alumnos",
+      "slug": "recital-alumnos",
+      "fecha": "2025-12-01",
+      "imagen": "/images/actividades/recital.jpg",
+      "destacada": true
+    },
+    {
+      "id": "taller-ritmo",
+      "slug": "taller-ritmo",
+      "fecha": "2025-11-15",
+      "imagen": "/images/actividades/taller-ritmo.jpg",
+      "destacada": false
+    }
+  ],
+  "testimonios": [
+    {
+      "id": "testimonio-1",
+      "nombre": "María G.",
+      "texto": "Empecé sin saber nada de guitarra y en pocos meses ya toco mis canciones favoritas. ¡Los profes son increíbles!",
+      "stars": 5
+    },
+    {
+      "id": "testimonio-2",
+      "nombre": "Lucas P.",
+      "texto": "Un espacio muy cálido, se nota que les apasiona la música. Recomiendo 100%.",
+      "stars": 5
+    },
+    {
+      "id": "testimonio-3",
+      "nombre": "Sofía R.",
+      "texto": "Mi hijo empezó con las clases de música inicial y creció un montón musicalmente. Muy buena propuesta.",
+      "stars": 5
+    }
+  ]
+}
