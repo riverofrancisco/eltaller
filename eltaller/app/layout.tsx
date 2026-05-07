@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" data-theme="eltaller" className={nunito.className}>
-      <body>{children}</body>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   );
 }

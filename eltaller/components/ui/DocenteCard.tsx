@@ -2,9 +2,9 @@ import { IconUser } from "@tabler/icons-react";
 
 type Docente = {
   id: string;
-  nombre: string;
-  foto: string;
-  instrumentos: string[];
+  name: string;
+  photo: string;
+  specialties: string[];
 };
 
 type ClasesItemsDict = Record<string, { nombre: string; descripcion: string }>;
@@ -27,17 +27,17 @@ export default function DocenteCard({ docente, clasesItems }: DocenteCardProps) 
 
         <div>
           <h3 className="font-extrabold text-lg text-base-content">
-            {docente.nombre}
+            {docente.name}
           </h3>
           <p className="text-sm text-base-content/60 font-semibold mt-0.5">
-            {docente.instrumentos
+            {docente.specialties
               .map((i) => clasesItems[i]?.nombre ?? i)
               .join(" · ")}
           </p>
         </div>
 
         <div className="flex flex-wrap gap-1 justify-center mt-1">
-          {docente.instrumentos.map((inst) => (
+          {docente.specialties.map((inst) => (
             <span
               key={inst}
               className="badge badge-secondary badge-outline text-xs font-semibold"

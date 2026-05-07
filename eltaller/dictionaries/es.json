@@ -9,9 +9,9 @@
     "contacto": "Contacto"
   },
   "hero": {
-    "titulo": "Un espacio para crear, aprender y expresarte",
-    "subtitulo": "Clases de música para todas las edades y niveles. Guitarras, piano, canto, batería y más.",
-    "cta": "Conocé nuestras clases",
+    "titulo": "Un espacio para aprender, crear y crecer",
+    "subtitulo": "Actividades artísticas para la comunidad. Canto, Instrumento, Ensamble, Habilidades Sociales, Teatro de Objetos y más.",
+    "cta": "Conocé nuestras actividades",
     "ctaContacto": "Escribinos por WhatsApp"
   },
   "sobreNosotros": {
@@ -75,20 +75,32 @@
   },
   "actividades": {
     "titulo": "Actividades",
-    "subtitulo": "Más allá de las clases",
-    "descripcion": "Organizamos recitales de alumnos, talleres especiales y eventos que hacen crecer a nuestra comunidad.",
+    "subtitulo": "Momentos que nos unen",
+    "descripcion": "En El Taller la música no termina en el aula. Organizamos dos tipos de eventos donde alumnos e invitados comparten el escenario y el canto.",
+    "tipos": {
+      "presentacion": "Presentación de Canto",
+      "karaoketon": "Karaoketon"
+    },
+    "etiquetas": {
+      "anual": "Anual · Diciembre",
+      "trimestral": "Trimestral",
+      "fotos": "Álbum de fotos",
+      "video": "Ver en YouTube"
+    },
     "items": {
-      "recital-alumnos": {
-        "nombre": "Recital de alumnos",
-        "descripcion": "Un espacio para que los alumnos muestren todo lo aprendido ante familia y amigos."
+      "presentacion-canto": {
+        "nombre": "Presentación de Canto",
+        "descripcion": "El gran evento del año. Cada diciembre, los alumnos suben al escenario para mostrar todo lo que aprendieron durante el año. Una noche de música, emoción y comunidad."
       },
-      "taller-ritmo": {
-        "nombre": "Taller de ritmo",
-        "descripcion": "Una jornada especial para explorar el ritmo con percusión y movimiento."
+      "karaoketon": {
+        "nombre": "Karaoketon",
+        "descripcion": "Encuentros trimestrales, íntimos e interactivos. No solo cantan los alumnos: ¡los invitados que quieran participar también tienen su momento en el micrófono! Una fiesta compartida con karaoke, improvisación y mucho disfrute."
       }
     },
     "proximamente": "Próximamente",
-    "verMas": "Ver más"
+    "verMas": "Ver más",
+    "verAlbum": "Ver álbum de fotos",
+    "verVideo": "Ver en YouTube"
   },
   "contacto": {
     "titulo": "Contacto",

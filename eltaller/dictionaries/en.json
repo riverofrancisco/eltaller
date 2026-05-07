@@ -9,9 +9,9 @@
     "contacto": "Contact"
   },
   "hero": {
-    "titulo": "A space to create, learn and express yourself",
-    "subtitulo": "Music classes for all ages and levels. Guitar, piano, singing, drums and more.",
-    "cta": "Explore our classes",
+    "titulo": "A space to learn, create and grow",
+    "subtitulo": "Artistic activities for the community. Singing, Instruments, Ensemble, Social Skills, Object Theater and more.",
+    "cta": "Explore our activities",
     "ctaContacto": "Message us on WhatsApp"
   },
   "sobreNosotros": {
@@ -75,20 +75,32 @@
   },
   "actividades": {
     "titulo": "Activities",
-    "subtitulo": "Beyond the classes",
-    "descripcion": "We organize student recitals, special workshops and events that help our community grow.",
+    "subtitulo": "Moments that bring us together",
+    "descripcion": "At El Taller, music doesn't end in the classroom. We organize two types of events where students and guests share the stage and the song.",
+    "tipos": {
+      "presentacion": "Singing Showcase",
+      "karaoketon": "Karaoke"
+    },
+    "etiquetas": {
+      "anual": "Annual · December",
+      "trimestral": "Quarterly",
+      "fotos": "Photo album",
+      "video": "Watch on YouTube"
+    },
     "items": {
-      "recital-alumnos": {
-        "nombre": "Student Recital",
-        "descripcion": "A space for students to show everything they've learned to family and friends."
+      "presentacion-canto": {
+        "nombre": "Singing Showcase",
+        "descripcion": "The big event of the year. Every December, students take the stage to show everything they've learned throughout the year. A night of music, emotion and community."
       },
-      "taller-ritmo": {
-        "nombre": "Rhythm Workshop",
-        "descripcion": "A special session to explore rhythm with percussion and movement."
+      "karaoketon": {
+        "nombre": "Karaoke",
+        "descripcion": "Quarterly, intimate and interactive gatherings. It's not just students who sing: guests who want to join in also get their moment at the microphone! A shared celebration with karaoke, improvisation and lots of fun."
       }
     },
     "proximamente": "Coming soon",
-    "verMas": "See more"
+    "verMas": "See more",
+    "verAlbum": "View photo album",
+    "verVideo": "Watch on YouTube"
   },
   "contacto": {
     "titulo": "Contact",

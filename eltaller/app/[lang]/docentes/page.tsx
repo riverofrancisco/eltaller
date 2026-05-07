@@ -24,7 +24,7 @@ export default async function DocentesPage({
 }) {
   const resolvedParams = await params;
   const dict = await getDictionary(resolvedParams.lang as Locale);
-  const { docentes } = mockData;
+  const { teachers: docentes } = mockData;
 
   return (
     <div className="section-padding container-max">

@@ -14,7 +14,7 @@ export default async function HomePage({
 }) {
   const resolvedParams = await params;
   const dict = await getDictionary(resolvedParams.lang as Locale);
-  const { site, clases, docentes, testimonios } = mockData;
+  const { site, classes: clases, teachers: docentes, reviews: testimonios } = mockData;
 
   return (
     <>
@@ -198,9 +198,9 @@ export default async function HomePage({
                     ))}
                   </div>
                   <p className="text-base-content/70 text-sm leading-relaxed italic">
-                    "{t.texto}"
+                    "{t.text}"
                   </p>
-                  <p className="font-bold text-sm text-primary">— {t.nombre}</p>
+                  <p className="font-bold text-sm text-primary">— {t.name}</p>
                 </div>
               </div>
             ))}

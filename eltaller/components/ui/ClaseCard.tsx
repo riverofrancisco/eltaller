@@ -5,10 +5,10 @@ import WhatsAppButton from "@/components/ui/WhatsAppButton";
 type ClaseItem = {
   id: string;
   slug: string;
-  imagen: string;
-  nivel: string[];
-  duracion: string;
-  modalidad: string;
+  image: string;
+  levels: string[];
+  duration: string;
+  modality: string;
 };
 
 type ClaseDict = {
@@ -62,13 +62,13 @@ export default function ClaseCard({
         <div className="flex flex-wrap gap-2 mt-1">
           <span className="badge badge-ghost gap-1 text-xs font-semibold">
             <IconClock size={11} stroke={1.5} />
-            {clase.duracion}
+            {clase.duration}
           </span>
           <span className="badge badge-ghost gap-1 text-xs font-semibold">
             <IconUsers size={11} stroke={1.5} />
-            {clasesDict.modalidades[clase.modalidad]}
+            {clasesDict.modalidades[clase.modality]}
           </span>
-          {clase.nivel.map((n) => (
+          {clase.levels.map((n) => (
             <span
               key={n}
               className="badge badge-primary badge-outline text-xs font-semibold"
