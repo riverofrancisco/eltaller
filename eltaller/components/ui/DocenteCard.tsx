@@ -40,7 +40,7 @@ export default function DocenteCard({ docente, clasesItems }: DocenteCardProps) 
           {docente.specialties.map((inst) => (
             <span
               key={inst}
-              className="badge badge-secondary badge-outline text-xs font-semibold"
+              className="badge badge-primary badge-outline text-xs font-semibold"
             >
               {clasesItems[inst]?.nombre ?? inst}
             </span>

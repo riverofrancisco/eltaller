@@ -85,8 +85,8 @@
       "name": "Maria Paracampo",
       "photo": "/images/docentes/docente-1.jpg",
       "specialties": [
-        "canto",
-        "guitarra"
+        "Canto",
+        "Guitarra"
       ],
       "email": ""
     },
@@ -95,18 +95,26 @@
       "name": "Catalina Rivero",
       "photo": "/images/docentes/docente-2.jpg",
       "specialties": [
-        "canto",
-        "guitarra",
-        "piano"
+        "Canto",
+        "Guitarra",
+        "Piano"
       ],
       "email": ""
     },
     {
       "id": "docente-3",
+      "name": "Eugenia ",
+      "photo": "/images/docentes/docente-3.jpg",
+      "specialties": [
+        "Taller de Habilidades Sociales"
+      ],
+      "email": ""
+    }, {
+      "id": "docente-4",
       "name": "Jose María Rivero",
       "photo": "/images/docentes/docente-3.jpg",
       "specialties": [
-        "teatro"
+        "Teatro de Objetos"
       ],
       "email": ""
     }
@@ -129,6 +137,36 @@
       "name": "Sofía",
       "lastName": "Rodríguez",
       "image": "/images/alumnos/alumno-3.jpg"
+    },
+    {
+      "id": "alumno-4",
+      "name": "Agustin",
+      "lastName": "",
+      "image": "/images/alumnos/default.jpg"
+    },
+    {
+      "id": "alumno-5",
+      "name": "Marcelo",
+      "lastName": "",
+      "image": "/images/alumnos/default.jpg"
+    },
+    {
+      "id": "alumno-6",
+      "name": "Mili",
+      "lastName": "",
+      "image": "/images/alumnos/default.jpg"
+    },
+    {
+      "id": "alumno-7",
+      "name": "Lucía",
+      "lastName": "",
+      "image": "/images/alumnos/default.jpg"
+    },
+    {
+      "id": "alumno-8",
+      "name": "Camila",
+      "lastName": "",
+      "image": "/images/alumnos/default.jpg"
     }
   ],
   "activities": [
@@ -143,71 +181,64 @@
       "featured": true,
       "songs": [
         {
-          "title": "Shallow",
-          "artist": "Lady Gaga & Bradley Cooper",
+          "title": "San Lucas",
+          "artist": "Kevin Kaarl",
           "students": [
-            "alumno-1",
-            "alumno-2"
+            "alumno-4"
           ],
           "guests": []
         },
         {
-          "title": "Fix You",
-          "artist": "Coldplay",
+          "title": "La despedida",
+          "artist": "Cami",
           "students": [
-            "alumno-3"
+            "alumno-5"
           ],
           "guests": []
         },
         {
-          "title": "Someone Like You",
-          "artist": "Adele",
+          "title": "Mientes tan bien",
+          "artist": "Sin Bandera",
           "students": [
-            "alumno-1"
+            "alumno-5"
+          ],
+          "guests": ["Cata"]
+        },
+        {
+          "title": "Hasta la raíz",
+          "artist": "Natalia Lafourcade",
+          "students": [
+            "alumno-6"
           ],
           "guests": []
         },
         {
-          "title": "Creep",
-          "artist": "Radiohead",
+          "title": "Genio atrapado",
+          "artist": "Christina Aguilera",
           "students": [
-            "alumno-2"
+            "alumno-7"
           ],
           "guests": []
         },
         {
-          "title": "El día que me quieras",
-          "artist": "Carlos Gardel",
+          "title": "Trainy seasons",
+          "artist": "",
           "students": [
-            "alumno-3"
+            "alumno-8"
           ],
           "guests": []
         },
         {
-          "title": "La flor de la canela",
-          "artist": "Chabuca Granda",
-          "students": [
-            "alumno-1"
-          ],
-          "guests": []
+          "title": "Las cosas que pasan",
+          "artist": "Tan Bionica",
+          "students": [],
+          "guests": ["Ensamble Juvenil"]
         },
         {
-          "title": "Bohemian Rhapsody",
-          "artist": "Queen",
-          "students": [
-            "alumno-1",
-            "alumno-2",
-            "alumno-3"
-          ],
-          "guests": []
-        },
-        {
-          "title": "No llores por mí Argentina",
-          "artist": "Andrew Lloyd Webber",
-          "students": [
-            "alumno-2"
-          ],
-          "guests": []
+          "title": "Reencuentro",
+          "artist": "Amaranta",
+          "students": [],
+          "guests": ["Todos"]
         }
       ]
     },
@@ -439,20 +470,20 @@
   "reviews": [
     {
       "id": "testimonio-1",
-      "name": "María G.",
-      "text": "Empecé sin saber nada de guitarra y en pocos meses ya toco mis canciones favoritas. ¡Los profes son increíbles!",
+      "name": "Sara Beatriz",
+      "text": "Es un espacio de paz, conexión y placer vinculado a la música. Hace bien al alma, y nos permite crecer a nuestro ritmo potenciando nuestras cualidades. ¡No se lo pueden perder!",
       "stars": 5
     },
     {
       "id": "testimonio-2",
-      "name": "Lucas P.",
-      "text": "Un espacio muy cálido, se nota que les apasiona la música. Recomiendo 100%.",
+      "name": "Maximo Bence",
+      "text": "La mejor forma de introducirse en el mundo del canto. El nivel de humanidad de las clases convierte en realidad el dicho: 'quien canta, sus males espanta'. Una experiencia que hay que vivir.",
       "stars": 5
     },
     {
       "id": "testimonio-3",
-      "name": "Sofía R.",
-      "text": "Mi hijo empezó con las clases de música inicial y creció un montón musicalmente. Muy buena propuesta.",
+      "name": "Lilian Cafaro",
+      "text": "Hermoso momento compartido con gente maravillosa. Un espacio cálido y profesional.",
       "stars": 5
     }
   ]

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | El Taller",
   },
   description:
-    "El Taller es un espacio de arte y música en Buenos Aires. Clases de música, danza, teatro y más.",
+    "El Taller es un espacio de arte y música en Buenos Aires. Clases de canto, instrumento, teatro y más.",
   icons: {
     icon: "/favicon.ico",
   },

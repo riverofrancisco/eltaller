@@ -182,7 +182,7 @@ export default async function HomePage({
       <section className="section-padding bg-gradient-to-br from-primary/10 to-secondary/10">
         <div className="container-max">
           <SectionTitle
-            titulo={resolvedParams.lang === "es" ? "Lo que dicen nuestros alumnos" : "What our students say"}
+            titulo={resolvedParams.lang === "es" ? "Experiencias con nosotros" : "Experiences with us"}
             className="mb-10"
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
