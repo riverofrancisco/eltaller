@@ -82,7 +82,15 @@ export default function ClaseCard({
           <WhatsAppButton
             phone={whatsapp}
             label={clasesDict.ctaInscripcion}
-            message={`Hola! Quiero información sobre las clases de ${dict.nombre}.`}
+            message={
+              lang === "es"
+                ? `Hola! Quiero información sobre ${
+                    clase.id === "instrumento" ? "las clases de " : ""
+                  }${dict.nombre}.`
+                : `Hi! I would like information about ${
+                    clase.id === "instrumento" ? "the classes for " : ""
+                  }${dict.nombre}.`
+            }
             size="sm"
           />
         </div>

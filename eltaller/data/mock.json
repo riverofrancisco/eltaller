@@ -7,80 +7,76 @@
     "email": "info@eltallerespaciodearte.com.ar",
     "phone": "+54 11 2250-9184",
     "whatsapp": "541122509184",
-    "address": "Buenos Aires, Argentina",
+    "address": "Bulnes 638, C1176 CABA, Argentina",
     "instagram": "https://www.instagram.com/eltaller.espaciodearte/",
     "facebook": "https://www.facebook.com/eltaller.espaciodearte",
     "youtube": "https://www.youtube.com/@eltaller.espaciodearte",
-    "mapsUrl": "https://maps.app.goo.gl/XzDtU67PiLhYYVVG7",
+    "mapsUrl": "https://maps.app.goo.gl/5HtxtReEExd114cg9",
     "domain": "https://eltallerespaciodearte.com.ar"
   },
   "classes": [
     {
-      "id": "guitarra",
-      "slug": "guitarra",
-      "image": "/images/clases/guitarra.jpg",
+      "id": "habilidades-sociales",
+      "slug": "habilidades-sociales",
+      "image": "/images/clases/habilidades-sociales.jpg",
       "levels": [
-        "principiante",
-        "intermedio",
-        "avanzado"
+        "adolescentes"
       ],
-      "duration": "45 min",
-      "modality": "individual"
-    },
-    {
-      "id": "piano",
-      "slug": "piano",
-      "image": "/images/clases/piano.jpg",
-      "levels": [
-        "principiante",
-        "intermedio",
-        "avanzado"
-      ],
-      "duration": "45 min",
-      "modality": "individual"
+      "duration": "90 min",
+      "modality": "grupal"
     },
     {
       "id": "canto",
       "slug": "canto",
       "image": "/images/clases/canto.jpg",
       "levels": [
-        "principiante",
-        "intermedio"
+        "adolescentes",
+        "adultos"
       ],
-      "duration": "45 min",
-      "modality": "individual"
+      "duration": "45/60 min",
+      "modality": "mixta"
     },
     {
-      "id": "bateria",
-      "slug": "bateria",
-      "image": "/images/clases/bateria.jpg",
+      "id": "ensamble-vocal",
+      "slug": "ensamble-vocal",
+      "image": "/images/clases/ensamble-vocal.jpg",
       "levels": [
-        "principiante",
-        "intermedio"
+        "mujeres",
+        "vocacional"
       ],
-      "duration": "45 min",
-      "modality": "individual"
-    },
-    {
-      "id": "bajo",
-      "slug": "bajo",
-      "image": "/images/clases/bajo.jpg",
-      "levels": [
-        "principiante",
-        "intermedio"
-      ],
-      "duration": "45 min",
-      "modality": "individual"
-    },
-    {
-      "id": "musica-inicial",
-      "slug": "musica-inicial",
-      "image": "/images/clases/musica-inicial.jpg",
-      "levels": [
-        "niños"
-      ],
-      "duration": "30 min",
+      "duration": "90 min",
       "modality": "grupal"
+    },
+    {
+      "id": "ensamble-jovenes",
+      "slug": "ensamble-jovenes",
+      "image": "/images/clases/ensamble-jovenes.jpg",
+      "levels": [
+        "jovenes"
+      ],
+      "duration": "90 min",
+      "modality": "grupal"
+    },
+    {
+      "id": "teatro-objetos",
+      "slug": "teatro-objetos",
+      "image": "/images/clases/teatro-objetos.jpg",
+      "levels": [
+        "adultos"
+      ],
+      "duration": "90 min",
+      "modality": "grupal"
+    },
+    {
+      "id": "instrumento",
+      "slug": "instrumento",
+      "image": "/images/clases/instrumento.jpg",
+      "levels": [
+        "principiante",
+        "intermedio"
+      ],
+      "duration": "45 min",
+      "modality": "mixta"
     }
   ],
   "teachers": [

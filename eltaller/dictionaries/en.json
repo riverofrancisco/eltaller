@@ -5,7 +5,7 @@
     "sobreNosotros": "About us",
     "clases": "Classes",
     "docentes": "Teachers",
-    "actividades": "Activities",
+    "actividades": "Events",
     "contacto": "Contact"
   },
   "hero": {
@@ -17,10 +17,19 @@
   "sobreNosotros": {
     "titulo": "About us",
     "subtitulo": "We are El Taller",
-    "descripcion": "El Taller is an art space designed for each person to find their voice, their rhythm and their way of expressing themselves. We were born with the conviction that music and arts transform lives, and that guides everything we do.",
-    "mision": "Our mission is to provide quality arts education in a warm, inclusive and passionate environment.",
+    "descripcion": [
+      "EL Taller “Espacio de Arte” opened its doors in 2005 under the name 'Quica Susmaes' Integral Singing School and with the motto: 'He who sings, scares away his woes.'",
+      "From its beginnings, it promoted and taught singing and musical instrument classes with the mission of fostering encounters of common affinity and shared learning.",
+      "People of all ages and levels have passed through our house, many of them taking their first professional steps.",
+      "We believe that music is a faithful companion and that, like all art, it exerts a transforming function in every being.",
+      "That is why, a few years ago, we decided to spread our wings and open space to new artistic disciplines that can also awaken, accompany, and transform those who are available and permeable to that experience.",
+      "We changed our name and location because we chose to trust our intuition and evolve along with our essence.",
+      "We invite everyone who resonates with our mission to Learn, Create, and Grow through art, to join and become part of the EL Taller. Espacio de Arte family.",
+      "Welcome!"
+    ],
+    "mision": "Learn, Create and Grow through art",
     "valores": [
-      { "titulo": "Passion", "descripcion": "We love music and it shows in every class." },
+      { "titulo": "Integrity", "descripcion": "We prioritize each person's individual process from the beginning, accompanying their unique evolution." },
       { "titulo": "Inclusion", "descripcion": "We open our doors to everyone, regardless of age or experience." },
       { "titulo": "Creativity", "descripcion": "We encourage personal expression and creative thinking." },
       { "titulo": "Community", "descripcion": "We build bonds between students, teachers and families." }
@@ -28,43 +37,49 @@
   },
   "clases": {
     "titulo": "Our classes",
-    "subtitulo": "Find the instrument that calls you",
+    "subtitulo": "Find the best proposal for you",
     "descripcion": "We offer individual and group classes for all ages and levels. For more information or to enroll, contact us via WhatsApp.",
     "ctaInscripcion": "Enroll via WhatsApp",
     "niveles": {
       "principiante": "Beginner",
       "intermedio": "Intermediate",
       "avanzado": "Advanced",
-      "niños": "Children"
+      "niños": "Children",
+      "adolescentes": "Teens",
+      "adultos": "Adults",
+      "jovenes": "Youth",
+      "mujeres": "Women",
+      "vocacional": "Vocational"
     },
     "modalidades": {
       "individual": "Individual class",
-      "grupal": "Group class"
+      "grupal": "Group class",
+      "mixta": "Individual or Group"
     },
     "items": {
-      "guitarra": {
-        "nombre": "Guitar",
-        "descripcion": "Learn to play guitar from scratch or improve your technique. Electric or acoustic."
-      },
-      "piano": {
-        "nombre": "Piano",
-        "descripcion": "From reading notes to interpretation. For children and adults."
+      "habilidades-sociales": {
+        "nombre": "Social Skills Workshop",
+        "descripcion": "Therapeutic and educational space for teens. Improves communication, emotional management, and conflict resolution. Thursdays 4 PM to 5.30 PM."
       },
       "canto": {
-        "nombre": "Singing",
-        "descripcion": "Develop your voice, vocal technique and confidence to sing."
+        "nombre": "Singing Classes",
+        "descripcion": "Destined for the awakening of what still sleeps and the improvement of what already exists. For teens and adults. Individual or duos."
       },
-      "bateria": {
-        "nombre": "Drums",
-        "descripcion": "Rhythm, coordination and lots of energy. Classes adapted to your level."
+      "ensamble-vocal": {
+        "nombre": "Vocal Ensemble \"Todos Somos Uno\"",
+        "descripcion": "Female vocational group focused on building vocal harmonies and shared artistic growth. Tuesdays 7.30 PM to 9 PM."
       },
-      "bajo": {
-        "nombre": "Bass",
-        "descripcion": "Bass is the backbone of the band. Learn to hold the groove."
+      "ensamble-jovenes": {
+        "nombre": "Youth Singing Ensemble",
+        "descripcion": "Group where you learn to sing in two or more voices, growing and creating different vocal harmonies together. Thursdays 7 PM to 8.30 PM."
       },
-      "musica-inicial": {
-        "nombre": "Music for Kids",
-        "descripcion": "For the little ones. Introduction to the musical world through play."
+      "teatro-objetos": {
+        "nombre": "Object Theater",
+        "descripcion": "Parting from puppet theater tools, designed for adults interested in pouring their creativity into this art. Mondays 7.30 PM to 9 PM."
+      },
+      "instrumento": {
+        "nombre": "Instrument (Piano, Guitar and Ukulele)",
+        "descripcion": "Musical instruments introduce us to the world of music and can accompany us for a lifetime. Beginner and intermediate levels. Private and group classes."
       }
     }
   },
@@ -74,7 +89,7 @@
     "descripcion": "Our teachers are professional musicians with a vocation for teaching. Each brings their own experience and style to enrich the learning experience."
   },
   "actividades": {
-    "titulo": "Activities",
+    "titulo": "Events",
     "subtitulo": "Moments that bring us together",
     "descripcion": "At El Taller, music doesn't end in the classroom. We organize two types of events where students and guests share the stage and the song.",
     "tipos": {

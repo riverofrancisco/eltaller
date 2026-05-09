@@ -5,7 +5,7 @@
     "sobreNosotros": "Sobre nosotros",
     "clases": "Clases",
     "docentes": "Docentes",
-    "actividades": "Actividades",
+    "actividades": "Eventos",
     "contacto": "Contacto"
   },
   "hero": {
@@ -17,10 +17,19 @@
   "sobreNosotros": {
     "titulo": "Sobre nosotros",
     "subtitulo": "Somos El Taller",
-    "descripcion": "El Taller es un espacio de arte pensado para que cada persona encuentre su voz, su ritmo y su forma de expresarse. Nacimos con la convicción de que la música y las artes transforman vidas, y eso guía todo lo que hacemos.",
-    "mision": "Nuestra misión es brindar una educación artística de calidad, en un ambiente cálido, inclusivo y apasionado.",
+    "descripcion": [
+      "EL Taller “Espacio de Arte” abrió sus puertas en el año 2005 bajo el nombre de Escuela Integral de Canto “Quica Susmaes” y con el lema: “Quien canta sus males espanta”.",
+      "Desde sus comienzos, promovió y dictó clases de canto e instrumentos musicales con la misión de propiciar encuentros de afinidad común y aprendizaje compartido.",
+      "Por nuestra casa han pasado personas de todas las edades y niveles, muchas de ellas dando sus primeros pasos profesionales.",
+      "Creemos que la música es una fiel compañera y que, como todo arte, ejerce una función transformadora en cada ser.",
+      "Por eso, hace algunos años decidimos desplegar nuestras alas y abrir espacio a nuevas disciplinas artísticas que también puedan despertar, acompañar y transformar a quienes estén disponibles y permeables a esa experiencia.",
+      "Cambiamos de nombre y de lugar porque elegimos confiar en nuestra intuición y evolucionar junto con nuestra esencia.",
+      "Invitamos a todas las personas que resuenen con nuestra misión de Aprender, Crear y Crecer desde el arte, a sumarse y formar parte de la familia de EL Taller. Espacio de Arte.",
+      "¡Bienvenidos!"
+    ],
+    "mision": "Aprender, Crear y Crecer desde el arte",
     "valores": [
-      { "titulo": "Pasión", "descripcion": "Amamos la música y eso se nota en cada clase." },
+      { "titulo": "Integridad", "descripcion": "Priorizamos el proceso individual de cada persona desde el comienzo, acompañando su evolución única." },
       { "titulo": "Inclusión", "descripcion": "Abrimos las puertas a todos, sin importar la edad ni la experiencia." },
       { "titulo": "Creatividad", "descripcion": "Fomentamos la expresión propia y el pensamiento creativo." },
       { "titulo": "Comunidad", "descripcion": "Construimos lazos entre alumnos, docentes y familias." }
@@ -28,43 +37,49 @@
   },
   "clases": {
     "titulo": "Nuestras clases",
-    "subtitulo": "Encontrá el instrumento que te llama",
+    "subtitulo": "Encontrá la mejor propuesta para vos",
     "descripcion": "Ofrecemos clases individuales y grupales para todas las edades y niveles. Para más información o inscribirte, contactanos por WhatsApp.",
     "ctaInscripcion": "Inscribirse por WhatsApp",
     "niveles": {
       "principiante": "Principiante",
       "intermedio": "Intermedio",
       "avanzado": "Avanzado",
-      "niños": "Niños"
+      "niños": "Niños",
+      "adolescentes": "Adolescentes",
+      "adultos": "Adultos",
+      "jovenes": "Jóvenes",
+      "mujeres": "Mujeres",
+      "vocacional": "Vocacional"
     },
     "modalidades": {
       "individual": "Clase individual",
-      "grupal": "Clase grupal"
+      "grupal": "Clase grupal",
+      "mixta": "Individual o Grupal"
     },
     "items": {
-      "guitarra": {
-        "nombre": "Guitarra",
-        "descripcion": "Aprendé a tocar la guitarra desde cero o perfeccioná tu técnica. Eléctrica o acústica."
-      },
-      "piano": {
-        "nombre": "Piano",
-        "descripcion": "Desde lectura de notas hasta interpretación. Para niños y adultos."
+      "habilidades-sociales": {
+        "nombre": "Taller de Habilidades Sociales",
+        "descripcion": "Espacio terapéutico y educativo para adolescentes. Mejora la comunicación, gestión emocional y resolución de conflictos. Jueves 16 a 17.30 hs."
       },
       "canto": {
-        "nombre": "Canto",
-        "descripcion": "Desarrollá tu voz, técnica vocal y confianza para cantar."
+        "nombre": "Clases de Canto",
+        "descripcion": "Destinadas al despertar de lo que aún duerme y al mejoramiento de lo que ya existe. Para adolescentes y adultos. Individuales o dúos."
       },
-      "bateria": {
-        "nombre": "Batería",
-        "descripcion": "Ritmo, coordinación y mucha energía. Clases adaptadas a tu nivel."
+      "ensamble-vocal": {
+        "nombre": "Ensamble Vocal \"Todos Somos Uno\"",
+        "descripcion": "Grupo vocacional femenino enfocado en la construcción de armonías vocales y el crecimiento compartido. Martes 19.30 a 21 hs."
       },
-      "bajo": {
-        "nombre": "Bajo",
-        "descripcion": "El bajo es la columna vertebral de la banda. Aprendé a sostener el groove."
+      "ensamble-jovenes": {
+        "nombre": "Ensamble de Canto para jóvenes",
+        "descripcion": "Aprendé a cantar a dos o más voces, creciendo y creando juntos diferentes armonías vocales. Jueves 19 a 20.30 hs."
       },
-      "musica-inicial": {
-        "nombre": "Música Inicial",
-        "descripcion": "Para los más chiquitos. Introducción al mundo musical a través del juego."
+      "teatro-objetos": {
+        "nombre": "Teatro de Objetos",
+        "descripcion": "Basado en el teatro de títeres, dirigido a adultos interesados en volcar su creatividad en este arte. Lunes 19.30 a 21 hs."
+      },
+      "instrumento": {
+        "nombre": "Instrumento (Piano, Guitarra y Ukelele)",
+        "descripcion": "Introducción al mundo de la música para acompañarte toda la vida. Nivel principiante e intermedio. Clases particulares y grupales."
       }
     }
   },
@@ -74,7 +89,7 @@
     "descripcion": "Nuestros docentes son músicos profesionales con vocación por la enseñanza. Cada uno aporta su propia experiencia y estilo para enriquecer el aprendizaje."
   },
   "actividades": {
-    "titulo": "Actividades",
+    "titulo": "Eventos",
     "subtitulo": "Momentos que nos unen",
     "descripcion": "En El Taller la música no termina en el aula. Organizamos dos tipos de eventos donde alumnos e invitados comparten el escenario y el canto.",
     "tipos": {

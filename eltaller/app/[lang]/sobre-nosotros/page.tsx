@@ -11,7 +11,9 @@ export async function generateMetadata({
   const dict = await getDictionary(resolvedParams.lang as Locale);
   return {
     title: dict.sobreNosotros.titulo,
-    description: dict.sobreNosotros.descripcion,
+    description: Array.isArray(dict.sobreNosotros.descripcion)
+      ? dict.sobreNosotros.descripcion[0]
+      : dict.sobreNosotros.descripcion,
   };
 }
 
@@ -33,12 +35,27 @@ export default async function SobreNosotrosPage({
       />
 
       <div className="max-w-3xl mx-auto text-center mb-16">
-        <p className="text-lg text-base-content/70 leading-relaxed mb-6">
-          {sobreNosotros.descripcion}
-        </p>
-        <p className="text-base-content/60 leading-relaxed italic border-l-4 border-primary pl-4 text-left">
-          {sobreNosotros.mision}
-        </p>
+        <div className="space-y-6 mb-8 text-left md:text-center">
+          {Array.isArray(sobreNosotros.descripcion) ? (
+            sobreNosotros.descripcion.map((p: string, i: number) => (
+              <p
+                key={i}
+                className="text-lg text-base-content/70 leading-relaxed"
+              >
+                {p}
+              </p>
+            ))
+          ) : (
+            <p className="text-lg text-base-content/70 leading-relaxed">
+              {sobreNosotros.descripcion}
+            </p>
+          )}
+        </div>
+        <div className="bg-primary/5 p-6 rounded-2xl border-l-4 border-primary">
+          <p className="text-base-content/80 leading-relaxed italic text-lg font-medium">
+            {sobreNosotros.mision}
+          </p>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

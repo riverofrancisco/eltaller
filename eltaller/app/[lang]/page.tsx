@@ -29,7 +29,7 @@ export default async function HomePage({
         <div className="container-max section-padding w-full relative z-10">
           <div className="max-w-2xl">
             <span className="badge badge-primary badge-outline font-bold tracking-widest text-xs uppercase mb-4">
-              El Taller — Espacio de Arte
+              El Taller &quot;Espacio de Arte&quot;
             </span>
             <h1 className="text-4xl md:text-6xl font-extrabold text-base-content leading-tight mb-6">
               {dict.hero.titulo}
@@ -111,12 +111,16 @@ export default async function HomePage({
                 subtitulo={dict.sobreNosotros.subtitulo}
                 align="left"
               />
-              <p className="mt-6 text-base-content/70 leading-relaxed">
-                {dict.sobreNosotros.descripcion}
-              </p>
-              <p className="mt-4 text-base-content/70 leading-relaxed">
-                {dict.sobreNosotros.mision}
-              </p>
+              <div className="mt-6 text-base-content/70 leading-relaxed space-y-4">
+                {Array.isArray(dict.sobreNosotros.descripcion) ? (
+                  <p>{dict.sobreNosotros.descripcion[0]}</p>
+                ) : (
+                  <p>{dict.sobreNosotros.descripcion}</p>
+                )}
+                <p className="font-semibold text-primary">
+                  {dict.sobreNosotros.mision}
+                </p>
+              </div>
               <Link
                 href={`/${resolvedParams.lang}/sobre-nosotros`}
                 className="btn btn-primary rounded-full font-bold mt-6 gap-2"

@@ -105,6 +105,42 @@ export default async function ContactoPage({
           </div>
         </div>
       </div>
+      
+      {/* Map Section */}
+      <div className="mt-16 max-w-4xl mx-auto">
+        <div className="card bg-base-100 shadow-xl overflow-hidden border border-base-300">
+          <div className="card-body p-0">
+            <div className="h-96 w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.002396857396!2d-58.41824869999999!3d-34.6041009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2685a45ed13164a1%3A0x28cc99f663ab80e7!2sEl%20Taller%20%22Espacio%20de%20Arte%22!5e0!3m2!1ses!2sar!4v1715279010469!5m2!1ses!2sar"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Google Maps - El Taller Espacio de Arte"
+              ></iframe>
+            </div>
+            <div className="p-6 bg-base-200 flex flex-wrap justify-between items-center gap-4">
+              <div>
+                <p className="font-bold text-base-content">
+                  {resolvedParams.lang === "es" ? "Encuéntranos en Google Maps" : "Find us on Google Maps"}
+                </p>
+                <p className="text-sm text-base-content/60">{site.address}</p>
+              </div>
+              <a
+                href={site.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-sm rounded-full font-bold"
+              >
+                {resolvedParams.lang === "es" ? "Ver perfil de Google" : "View Google Profile"}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
