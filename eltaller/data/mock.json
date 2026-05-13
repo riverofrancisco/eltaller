@@ -123,92 +123,77 @@
     {
       "id": "alumno-4",
       "name": "Agustin",
-      "lastName": "",
-      "image": "/images/alumnos/default.jpg"
+      "lastName": ""
     },
     {
       "id": "alumno-5",
       "name": "Marcelo",
-      "lastName": "",
-      "image": "/images/alumnos/default.jpg"
+      "lastName": ""
     },
     {
       "id": "alumno-6",
       "name": "Mili",
-      "lastName": "",
-      "image": "/images/alumnos/default.jpg"
+      "lastName": ""
     },
     {
       "id": "alumno-7",
       "name": "Lucía",
-      "lastName": "",
-      "image": "/images/alumnos/default.jpg"
+      "lastName": ""
     },
     {
       "id": "alumno-8",
       "name": "Camila",
-      "lastName": "",
-      "image": "/images/alumnos/default.jpg"
+      "lastName": ""
     },
     {
       "id": "alumno-9",
       "name": "Lourdes",
-      "lastName": "",
-      "image": "/images/alumnos/default.jpg"
+      "lastName": ""
     },
     {
       "id": "alumno-10",
       "name": "Diego",
-      "lastName": "",
-      "image": "/images/alumnos/default.jpg"
+      "lastName": ""
     },
     {
       "id": "alumno-11",
       "name": "Silvina",
-      "lastName": "",
-      "image": "/images/alumnos/default.jpg"
+      "lastName": ""
     },
     {
       "id": "alumno-12",
       "name": "May",
-      "lastName": "",
-      "image": "/images/alumnos/default.jpg"
+      "lastName": ""
     },
     {
       "id": "alumno-13",
       "name": "Gerald",
-      "lastName": "",
-      "image": "/images/alumnos/default.jpg"
+      "lastName": ""
     },
     {
       "id": "alumno-14",
       "name": "Olga",
-      "lastName": "",
-      "image": "/images/alumnos/default.jpg"
+      "lastName": ""
     },
     {
       "id": "alumno-15",
       "name": "Rocío",
-      "lastName": "",
-      "image": "/images/alumnos/default.jpg"
+      "lastName": ""
     },
     {
       "id": "alumno-16",
       "name": "Sara",
-      "lastName": "",
-      "image": "/images/alumnos/default.jpg"
+      "lastName": ""
     },
     {
       "id": "alumno-17",
       "name": "Ale",
-      "lastName": "",
-      "image": "/images/alumnos/default.jpg"
+      "lastName": ""
     },
     {
       "id": "alumno-18",
       "name": "Mariela",
-      "lastName": "",
-      "image": "/images/alumnos/default.jpg"
+      "lastName": ""
     }
   ],
   "activities": [

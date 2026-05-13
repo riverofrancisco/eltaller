@@ -26,7 +26,6 @@ type Alumno = {
   id: string;
   name: string;
   lastName: string;
-  image: string;
 };
 
 type Actividad = {
@@ -331,13 +330,7 @@ export default async function ActividadDetailPage({
                           const alumno = alumnosList.find((a) => a.id === alumnoId);
                           if (!alumno) return null;
                           return (
-                            <div key={alumno.id} className="badge badge-primary badge-outline h-auto py-1 pl-1 pr-3 gap-2 font-semibold">
-                              <div className="avatar">
-                                <div className="w-5 h-5 rounded-full bg-base-200">
-                                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                                  <img src={alumno.image} alt={alumno.name} />
-                                </div>
-                              </div>
+                            <div key={alumno.id} className="badge badge-primary badge-outline h-auto py-1 px-3 text-xs font-semibold">
                               {alumno.name} {alumno.lastName}
                             </div>
                           );
