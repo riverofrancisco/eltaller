@@ -83,7 +83,7 @@
     {
       "id": "docente-1",
       "name": "Maria Paracampo",
-      "photo": "/images/docentes/docente-1.jpg",
+      "photo": "/images/teachers/maria-paracampo-violet.png",
       "specialties": [
         "Canto",
         "Guitarra"
@@ -93,7 +93,7 @@
     {
       "id": "docente-2",
       "name": "Catalina Rivero",
-      "photo": "/images/docentes/docente-2.jpg",
+      "photo": "/images/teachers/catalina-rivero.webp",
       "specialties": [
         "Canto",
         "Guitarra",
@@ -103,8 +103,8 @@
     },
     {
       "id": "docente-3",
-      "name": "Eugenia ",
-      "photo": "/images/docentes/docente-3.jpg",
+      "name": "Eugenia Gomez Diaz",
+      "photo": "/images/teachers/eugenia-gomez-diaz-reframed.png",
       "specialties": [
         "Taller de Habilidades Sociales"
       ],
@@ -112,7 +112,7 @@
     }, {
       "id": "docente-4",
       "name": "Jose María Rivero",
-      "photo": "/images/docentes/docente-3.jpg",
+      "photo": "/images/teachers/jose-maria-rivero-plain.png",
       "specialties": [
         "Teatro de Objetos"
       ],
@@ -120,24 +120,6 @@
     }
   ],
   "students": [
-    {
-      "id": "alumno-1",
-      "name": "Ana",
-      "lastName": "García",
-      "image": "/images/alumnos/alumno-1.jpg"
-    },
-    {
-      "id": "alumno-2",
-      "name": "Martín",
-      "lastName": "López",
-      "image": "/images/alumnos/alumno-2.jpg"
-    },
-    {
-      "id": "alumno-3",
-      "name": "Sofía",
-      "lastName": "Rodríguez",
-      "image": "/images/alumnos/alumno-3.jpg"
-    },
     {
       "id": "alumno-4",
       "name": "Agustin",
@@ -167,6 +149,66 @@
       "name": "Camila",
       "lastName": "",
       "image": "/images/alumnos/default.jpg"
+    },
+    {
+      "id": "alumno-9",
+      "name": "Lourdes",
+      "lastName": "",
+      "image": "/images/alumnos/default.jpg"
+    },
+    {
+      "id": "alumno-10",
+      "name": "Diego",
+      "lastName": "",
+      "image": "/images/alumnos/default.jpg"
+    },
+    {
+      "id": "alumno-11",
+      "name": "Silvina",
+      "lastName": "",
+      "image": "/images/alumnos/default.jpg"
+    },
+    {
+      "id": "alumno-12",
+      "name": "May",
+      "lastName": "",
+      "image": "/images/alumnos/default.jpg"
+    },
+    {
+      "id": "alumno-13",
+      "name": "Gerald",
+      "lastName": "",
+      "image": "/images/alumnos/default.jpg"
+    },
+    {
+      "id": "alumno-14",
+      "name": "Olga",
+      "lastName": "",
+      "image": "/images/alumnos/default.jpg"
+    },
+    {
+      "id": "alumno-15",
+      "name": "Rocío",
+      "lastName": "",
+      "image": "/images/alumnos/default.jpg"
+    },
+    {
+      "id": "alumno-16",
+      "name": "Sara",
+      "lastName": "",
+      "image": "/images/alumnos/default.jpg"
+    },
+    {
+      "id": "alumno-17",
+      "name": "Ale",
+      "lastName": "",
+      "image": "/images/alumnos/default.jpg"
+    },
+    {
+      "id": "alumno-18",
+      "name": "Mariela",
+      "lastName": "",
+      "image": "/images/alumnos/default.jpg"
     }
   ],
   "activities": [
@@ -174,41 +216,23 @@
       "id": "presentacion-canto-2025",
       "slug": "presentacion-canto-2025",
       "type": "presentacion",
-      "date": "2025-12-06",
-      "image": "/images/actividades/presentacion-2025.jpg",
+      "date": "2025-12-18",
+      "image": "/images/activities/presentacion-2025.jpg",
       "album": [],
       "youtubeUrl": "https://www.youtube.com/watch?v=FkxB5Osv45I",
       "featured": true,
       "songs": [
         {
-          "title": "San Lucas",
-          "artist": "Kevin Kaarl",
-          "students": [
-            "alumno-4"
-          ],
-          "guests": []
+          "title": "Todos los días un poco",
+          "artist": "León Gieco",
+          "students": [],
+          "guests": ["Profes Cata y María"]
         },
         {
           "title": "La despedida",
           "artist": "Cami",
           "students": [
             "alumno-5"
-          ],
-          "guests": []
-        },
-        {
-          "title": "Mientes tan bien",
-          "artist": "Sin Bandera",
-          "students": [
-            "alumno-5"
-          ],
-          "guests": ["Cata"]
-        },
-        {
-          "title": "Hasta la raíz",
-          "artist": "Natalia Lafourcade",
-          "students": [
-            "alumno-6"
           ],
           "guests": []
         },
@@ -221,10 +245,82 @@
           "guests": []
         },
         {
-          "title": "Trainy seasons",
-          "artist": "",
+          "title": "La flor de la canela",
+          "artist": "Chabuca Granda",
+          "students": [
+            "alumno-14"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Zamba de Lozano",
+          "artist": "Cuchi Leguizamón",
+          "students": [
+            "alumno-16"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Hasta la raíz",
+          "artist": "Natalia Lafourcade",
+          "students": [
+            "alumno-6"
+          ],
+          "guests": []
+        },
+        {
+          "title": "San Lucas",
+          "artist": "Kevin Kaarl",
+          "students": [
+            "alumno-4"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Cantar cantar cantar",
+          "artist": "Juan Carlos Baglietto",
+          "students": [
+            "alumno-17"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Uno los dos",
+          "artist": "Miranda!",
+          "students": [
+            "alumno-9"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Training Season",
+          "artist": "Dua Lipa",
           "students": [
             "alumno-8"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Dicen",
+          "artist": "Yuridia",
+          "students": [
+            "alumno-18"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Mientes tan bien",
+          "artist": "Sin Bandera",
+          "students": [
+            "alumno-5"
+          ],
+          "guests": ["Profe Cata"]
+        },
+        {
+          "title": "My man",
+          "artist": "Barbra Streisand",
+          "students": [
+            "alumno-15"
           ],
           "guests": []
         },
@@ -233,6 +329,24 @@
           "artist": "Tan Bionica",
           "students": [],
           "guests": ["Ensamble Juvenil"]
+        },
+        {
+          "title": "Tren del cielo",
+          "artist": "Soledad Pastorutti",
+          "students": [],
+          "guests": ["Ensamble Vocal TSU"]
+        },
+        {
+          "title": "Canción de amor",
+          "artist": "",
+          "students": [],
+          "guests": ["Ensamble Vocal TSU"]
+        },
+        {
+          "title": "Honrar la vida",
+          "artist": "Eladia Blázquez",
+          "students": [],
+          "guests": ["Ensamble Vocal TSU"]
         },
         {
           "title": "Reencuentro",
@@ -246,225 +360,125 @@
       "id": "presentacion-canto-2024",
       "slug": "presentacion-canto-2024",
       "type": "presentacion",
-      "date": "2024-12-07",
+      "date": "2024-12-12",
       "image": "/images/actividades/presentacion-2024.jpg",
       "album": [],
       "youtubeUrl": "https://www.youtube.com/watch?v=eysZGJRfIq8",
       "featured": false,
       "songs": [
         {
-          "title": "La Llorona",
-          "artist": "Traditional / Chavela Vargas",
-          "students": [
-            "alumno-1"
-          ],
+          "title": "Algo Contigo",
+          "artist": "Vicentico",
+          "students": ["alumno-9"],
           "guests": []
         },
         {
-          "title": "Hallelujah",
-          "artist": "Leonard Cohen",
-          "students": [
-            "alumno-2"
-          ],
+          "title": "Por tu maldito amor",
+          "artist": "Vicente Fernández",
+          "students": ["alumno-10"],
           "guests": []
         },
         {
-          "title": "A tu lado",
-          "artist": "Chayanne",
-          "students": [
-            "alumno-3"
-          ],
+          "title": "Todo es perfecto",
+          "artist": "Inspector",
+          "students": ["alumno-11"],
           "guests": []
         },
         {
-          "title": "Sweet Child O' Mine",
-          "artist": "Guns N' Roses",
-          "students": [
-            "alumno-1",
-            "alumno-2"
-          ],
+          "title": "Oceans",
+          "artist": "Hillsong United",
+          "students": ["alumno-12", "alumno-13"],
           "guests": []
         },
         {
-          "title": "Bésame mucho",
-          "artist": "Consuelo Velázquez",
-          "students": [
-            "alumno-2"
-          ],
+          "title": "Muñecos",
+          "artist": "Muñecos de Papel",
+          "students": ["alumno-7"],
           "guests": []
         },
         {
-          "title": "Todo cambia",
-          "artist": "Mercedes Sosa",
-          "students": [
-            "alumno-3"
-          ],
+          "title": "Ho Capito- Lontano",
+          "artist": "Luigi Tenco",
+          "students": ["alumno-14"],
           "guests": []
         },
         {
-          "title": "Con te partirò",
-          "artist": "Andrea Bocelli",
-          "students": [
-            "alumno-1"
-          ],
+          "title": "El trato",
+          "artist": "Alejandro Sanz",
+          "students": ["alumno-6"],
           "guests": []
+        },
+        {
+          "title": "Stand by me",
+          "artist": "Ben E. King",
+          "students": ["alumno-7"],
+          "guests": []
+        },
+        {
+          "title": "My favourite things",
+          "artist": "Julie Andrews",
+          "students": ["alumno-15"],
+          "guests": []
+        },
+        {
+          "title": "El valle y el volcán",
+          "artist": "Jairo",
+          "students": [],
+          "guests": []
+        },
+        {
+          "title": "Zombie",
+          "artist": "The Cranberries",
+          "students": ["alumno-9"],
+          "guests": []
+        },
+        {
+          "title": "Hasta que me olvides",
+          "artist": "Luis Miguel",
+          "students": ["alumno-10"],
+          "guests": []
+        },
+        {
+          "title": "Canon in Swing",
+          "artist": "Pachelbel",
+          "students": [],
+          "guests": ["Ensamble Vocal TSU"]
+        },
+        {
+          "title": "Variación Pachelbel",
+          "artist": "Pachelbel",
+          "students": [],
+          "guests": ["Ensamble Vocal TSU"]
+        },
+        {
+          "title": "Como la cigarra",
+          "artist": "María Elena Walsh",
+          "students": [],
+          "guests": ["Ensamble Vocal TSU"]
+        },
+        {
+          "title": "Non mollare mai",
+          "artist": "Gigi D'Alessio",
+          "students": [],
+          "guests": ["Ensamble Vocal TSU"]
+        },
+        {
+          "title": "Donde vamos",
+          "artist": "Morat",
+          "students": [],
+          "guests": ["Todos"]
         }
       ]
     },
     {
-      "id": "karaoketon-q3-2025",
-      "slug": "karaoketon-q3-2025",
+      "id": "karaoketon-2025-06-29",
+      "slug": "karaoketon-2025-06-29",
       "type": "karaoketon",
-      "date": "2025-09-20",
-      "image": "/images/actividades/karaoketon-q3-2025.jpg",
+      "date": "2025-06-29",
+      "image": "/images/actividades/karaoketon-2025-06-29.jpg",
       "album": [],
       "featured": false,
-      "songs": [
-        {
-          "title": "Despacito",
-          "artist": "Luis Fonsi",
-          "students": [
-            "alumno-1"
-          ],
-          "guests": []
-        },
-        {
-          "title": "Shape of You",
-          "artist": "Ed Sheeran",
-          "students": [],
-          "guests": [
-            "Invitado/a"
-          ]
-        },
-        {
-          "title": "Tusa",
-          "artist": "Karol G & Nicki Minaj",
-          "students": [
-            "alumno-2",
-            "alumno-3"
-          ],
-          "guests": []
-        },
-        {
-          "title": "Libre soy",
-          "artist": "Frozen OST",
-          "students": [],
-          "guests": [
-            "Invitado/a"
-          ]
-        },
-        {
-          "title": "Mi gente",
-          "artist": "J Balvin",
-          "students": [
-            "alumno-1"
-          ],
-          "guests": []
-        }
-      ]
-    },
-    {
-      "id": "karaoketon-q2-2025",
-      "slug": "karaoketon-q2-2025",
-      "type": "karaoketon",
-      "date": "2025-06-14",
-      "image": "/images/actividades/karaoketon-q2-2025.jpg",
-      "album": [],
-      "featured": false,
-      "songs": [
-        {
-          "title": "Africa",
-          "artist": "Toto",
-          "students": [],
-          "guests": [
-            "Invitado/a"
-          ]
-        },
-        {
-          "title": "Roar",
-          "artist": "Katy Perry",
-          "students": [
-            "alumno-1"
-          ],
-          "guests": []
-        },
-        {
-          "title": "Vivir mi vida",
-          "artist": "Marc Anthony",
-          "students": [],
-          "guests": [
-            "Invitado/a"
-          ]
-        },
-        {
-          "title": "Perfect",
-          "artist": "Ed Sheeran",
-          "students": [
-            "alumno-2"
-          ],
-          "guests": []
-        },
-        {
-          "title": "Quizás, quizás, quizás",
-          "artist": "Osvaldo Farrés",
-          "students": [
-            "alumno-3"
-          ],
-          "guests": []
-        }
-      ]
-    },
-    {
-      "id": "karaoketon-q1-2025",
-      "slug": "karaoketon-q1-2025",
-      "type": "karaoketon",
-      "date": "2025-03-22",
-      "image": "/images/actividades/karaoketon-q1-2025.jpg",
-      "album": [],
-      "featured": false,
-      "songs": [
-        {
-          "title": "Don't Stop Believin'",
-          "artist": "Journey",
-          "students": [],
-          "guests": [
-            "Invitado/a"
-          ]
-        },
-        {
-          "title": "Waka Waka",
-          "artist": "Shakira",
-          "students": [
-            "alumno-1"
-          ],
-          "guests": []
-        },
-        {
-          "title": "La bamba",
-          "artist": "Ritchie Valens",
-          "students": [],
-          "guests": [
-            "Invitado/a"
-          ]
-        },
-        {
-          "title": "Thriller",
-          "artist": "Michael Jackson",
-          "students": [
-            "alumno-2",
-            "alumno-3"
-          ],
-          "guests": []
-        },
-        {
-          "title": "Cuando el amor se acaba",
-          "artist": "Pablo Milanés",
-          "students": [
-            "alumno-1"
-          ],
-          "guests": []
-        }
-      ]
+      "songs": []
     }
   ],
   "reviews": [

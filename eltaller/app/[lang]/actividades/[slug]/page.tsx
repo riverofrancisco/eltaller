@@ -11,6 +11,7 @@ import {
   IconPhoto,
   IconUser,
   IconUserHeart,
+  IconUsers,
 } from "@tabler/icons-react";
 import { notFound } from "next/navigation";
 
@@ -230,8 +231,14 @@ export default async function ActividadDetailPage({
                     {cancionesConInvitados.length > 0 && (
                       <div className="flex items-center justify-between">
                         <span className="text-sm text-base-content/60 flex items-center gap-2">
-                          <IconUserHeart size={14} stroke={1.5} />
-                          {lang === "es" ? "Canciones por Invitados" : "Songs by Guests"}
+                          {esPresentacion ? (
+                            <IconUsers size={14} stroke={1.5} />
+                          ) : (
+                            <IconUserHeart size={14} stroke={1.5} />
+                          )}
+                          {lang === "es" 
+                            ? (esPresentacion ? "Canciones en Conjunto" : "Canciones por Invitados") 
+                            : (esPresentacion ? "Group Songs" : "Songs by Guests")}
                         </span>
                         <span className="font-bold text-lg">
                           {cancionesConInvitados.length}
@@ -339,7 +346,11 @@ export default async function ActividadDetailPage({
                         {/* Invitados */}
                         {cancion.guests?.map((invitado, idx) => (
                           <div key={idx} className="badge badge-secondary h-auto py-1 px-3 font-semibold text-xs flex items-center h-full">
-                            <IconUserHeart size={12} stroke={2} className="mr-1" />
+                            {esPresentacion ? (
+                              <IconUsers size={12} stroke={2} className="mr-1" />
+                            ) : (
+                              <IconUserHeart size={12} stroke={2} className="mr-1" />
+                            )}
                             {invitado}
                           </div>
                         ))}
