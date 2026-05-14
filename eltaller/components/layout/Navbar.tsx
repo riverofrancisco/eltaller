@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
-import { IconMenu2, IconX } from "@tabler/icons-react";
+import { useState, useEffect } from "react";
+import { IconMenu2, IconX, IconSun, IconMoon } from "@tabler/icons-react";
+import { useTheme } from "next-themes";
 import type { Locale } from "@/lib/getDictionary";
 
 type NavDict = {
@@ -31,8 +32,19 @@ const navLinks = (lang: Locale, dict: NavDict) => [
 
 export default function Navbar({ lang, dict }: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const links = navLinks(lang, dict);
   const otherLang: Locale = lang === "es" ? "en" : "es";
+
+  const toggleTheme = () => {
+    setTheme(theme === "eltallerdark" ? "eltaller" : "eltallerdark");
+  };
 
   return (
     <nav className="navbar bg-base-100/90 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-primary/20">
@@ -69,6 +81,17 @@ export default function Navbar({ lang, dict }: NavbarProps) {
           >
             {otherLang}
           </Link>
+
+          {/* Theme switcher */}
+          {mounted && (
+            <button
+              onClick={toggleTheme}
+              className="btn btn-ghost btn-circle btn-sm ml-1 text-base-content hover:bg-primary/10"
+              aria-label="Cambiar tema"
+            >
+              {theme === "eltallerdark" ? <IconSun size={20} stroke={1.5} /> : <IconMoon size={20} stroke={1.5} />}
+            </button>
+          )}
         </div>
 
         {/* Mobile: hamburger */}
@@ -79,6 +102,15 @@ export default function Navbar({ lang, dict }: NavbarProps) {
           >
             {otherLang}
           </Link>
+          {mounted && (
+            <button
+              onClick={toggleTheme}
+              className="btn btn-ghost btn-circle btn-xs text-base-content hover:bg-primary/10"
+              aria-label="Cambiar tema"
+            >
+              {theme === "eltallerdark" ? <IconSun size={18} stroke={1.5} /> : <IconMoon size={18} stroke={1.5} />}
+            </button>
+          )}
           <button
             className="btn btn-ghost btn-circle"
             onClick={() => setMenuOpen(!menuOpen)}

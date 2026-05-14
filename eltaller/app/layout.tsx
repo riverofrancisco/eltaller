@@ -29,14 +29,20 @@ export const metadata: Metadata = {
   },
 };
 
+import { Providers } from "./providers";
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" data-theme="eltaller" className={`${marcellus.variable} ${quicksand.variable} ${quicksand.className}`}>
-      <body suppressHydrationWarning>{children}</body>
+    <html lang="es" suppressHydrationWarning className={`${marcellus.variable} ${quicksand.variable} ${quicksand.className}`}>
+      <body suppressHydrationWarning>
+        <Providers>
+          {children}
+        </Providers>
+      </body>
     </html>
   );
 }
