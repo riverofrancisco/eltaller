@@ -117,11 +117,10 @@ export default async function ActividadDetailPage({
     <div className="min-h-screen">
       {/* ── HERO BANNER ─────────────────────────────────────────── */}
       <div
-        className={`relative overflow-hidden py-20 px-4 ${
-          esPresentacion
+        className={`relative overflow-hidden py-20 px-4 ${esPresentacion
             ? "bg-gradient-to-br from-primary/20 via-base-200 to-secondary/10"
             : "bg-gradient-to-br from-secondary/20 via-base-200 to-primary/10"
-        }`}
+          }`}
       >
         {/* Decoración de fondo */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -142,9 +141,8 @@ export default async function ActividadDetailPage({
           {/* Badges */}
           <div className="flex flex-wrap gap-2 mb-4">
             <span
-              className={`badge badge-lg font-bold ${
-                esPresentacion ? "badge-primary" : "badge-secondary"
-              }`}
+              className={`badge badge-lg font-bold ${esPresentacion ? "badge-primary" : "badge-secondary"
+                }`}
             >
               {tipoLabel}
             </span>
@@ -235,8 +233,8 @@ export default async function ActividadDetailPage({
                           ) : (
                             <IconUserHeart size={14} stroke={1.5} />
                           )}
-                          {lang === "es" 
-                            ? (esPresentacion ? "Canciones en Conjunto" : "Canciones por Invitados") 
+                          {lang === "es"
+                            ? (esPresentacion ? "Canciones en Conjunto" : "Canciones por Invitados")
                             : (esPresentacion ? "Group Songs" : "Songs by Guests")}
                         </span>
                         <span className="font-bold text-lg">
@@ -250,17 +248,15 @@ export default async function ActividadDetailPage({
 
               {/* Tipo de evento info */}
               <div
-                className={`card border ${
-                  esPresentacion
+                className={`card border ${esPresentacion
                     ? "border-primary/30 bg-primary/5"
                     : "border-secondary/30 bg-secondary/5"
-                }`}
+                  }`}
               >
                 <div className="card-body gap-3">
                   <div
-                    className={`w-10 h-10 rounded-xl flex items-center justify-center ${
-                      esPresentacion ? "bg-primary/20" : "bg-secondary/20"
-                    }`}
+                    className={`w-10 h-10 rounded-xl flex items-center justify-center ${esPresentacion ? "bg-primary/20" : "bg-secondary/20"
+                      }`}
                   >
                     <IconMicrophone2
                       size={20}
@@ -277,8 +273,8 @@ export default async function ActividadDetailPage({
                         ? "Presentación anual realizada cada diciembre."
                         : "Annual showcase held every December."
                       : lang === "es"
-                      ? "Encuentro trimestral abierto a alumnos e invitados."
-                      : "Quarterly gathering open to students and guests."}
+                        ? "Encuentro trimestral abierto a alumnos e invitados."
+                        : "Quarterly gathering open to students and guests."}
                   </p>
                 </div>
               </div>
@@ -300,11 +296,10 @@ export default async function ActividadDetailPage({
                   return (
                     <div
                       key={i}
-                      className={`flex flex-col md:flex-row md:items-center gap-4 p-4 rounded-2xl border transition-all duration-200 hover:shadow-md ${
-                        tieneInvitados && !tieneAlumnos
+                      className={`flex flex-col md:flex-row md:items-center gap-4 p-4 rounded-2xl border transition-all duration-200 hover:shadow-md ${tieneInvitados && !tieneAlumnos
                           ? "border-secondary/30 bg-secondary/5 hover:border-secondary/50"
                           : "border-base-300 bg-base-100 hover:border-primary/30"
-                      }`}
+                        }`}
                     >
                       <div className="flex items-center gap-4 flex-1 min-w-0">
                         {/* Número */}
@@ -335,7 +330,7 @@ export default async function ActividadDetailPage({
                             </div>
                           );
                         })}
-                        
+
                         {/* Invitados */}
                         {cancion.guests?.map((invitado, idx) => (
                           <div key={idx} className="badge badge-secondary h-auto py-1 px-3 font-semibold text-xs flex items-center h-full">

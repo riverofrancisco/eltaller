@@ -23,9 +23,9 @@ export default function DocenteCard({ docente, clasesItems }: DocenteCardProps) 
           <div className="w-20 h-20 rounded-full ring-4 ring-primary/20 overflow-hidden bg-base-200">
             {docente.photo ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img 
-                src={docente.photo} 
-                alt={docente.name} 
+              <img
+                src={docente.photo}
+                alt={docente.name}
                 className="w-full h-full object-cover"
               />
             ) : (

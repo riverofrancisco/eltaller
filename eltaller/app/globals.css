@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Google Fonts — cargadas via next/font en layout.tsx */
+/* Google Fonts — Marcellus para todos los headings */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display), Georgia, serif;
+    font-weight: 400;
+  }
+
+  body {
+    font-family: var(--font-body), system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 1.0625rem;
+  }
+
+  p, li, span, a, label {
+    font-weight: 500;
+  }
+}
 
 :root {
   --color-primary: #d1a3ff;
@@ -26,3 +42,9 @@ body {
 .container-max {
   @apply max-w-6xl mx-auto;
 }
+
+/* Marcellus para el nombre de marca (spans, no headings) */
+.brand-name {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 400;
+}

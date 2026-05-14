@@ -105,7 +105,7 @@ export default async function ContactoPage({
           </div>
         </div>
       </div>
-      
+
       {/* Map Section */}
       <div className="mt-16 max-w-4xl mx-auto">
         <div className="card bg-base-100 shadow-xl overflow-hidden border border-base-300">

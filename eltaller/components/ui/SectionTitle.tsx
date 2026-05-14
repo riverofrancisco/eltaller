@@ -28,9 +28,8 @@ export default function SectionTitle({
         {titulo}
       </h2>
       <div
-        className={`mt-3 h-1 w-16 rounded-full bg-gradient-to-r from-primary to-secondary ${
-          align === "center" ? "mx-auto" : align === "right" ? "ml-auto" : ""
-        }`}
+        className={`mt-3 h-1 w-16 rounded-full bg-gradient-to-r from-primary to-secondary ${align === "center" ? "mx-auto" : align === "right" ? "ml-auto" : ""
+          }`}
       />
     </div>
   );

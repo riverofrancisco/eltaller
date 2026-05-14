@@ -64,9 +64,8 @@ export default async function ActividadesPage({
     return (
       <Link
         href={`/${lang}/actividades/${actividad.slug}`}
-        className={`card bg-base-100 shadow-md border transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group cursor-pointer ${
-          actividad.featured ? "border-primary/40" : "border-base-300 hover:border-primary/30"
-        }`}
+        className={`card bg-base-100 shadow-md border transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group cursor-pointer ${actividad.featured ? "border-primary/40" : "border-base-300 hover:border-primary/30"
+          }`}
       >
         {actividad.featured && (
           <div className="h-1.5 w-full bg-gradient-to-r from-primary to-secondary rounded-t-2xl" />
@@ -75,9 +74,8 @@ export default async function ActividadesPage({
           {/* Tipo + fecha */}
           <div className="flex flex-wrap items-center gap-2">
             <span
-              className={`badge badge-sm font-bold ${
-                esPresentacion ? "badge-primary" : "badge-secondary"
-              }`}
+              className={`badge badge-sm font-bold ${esPresentacion ? "badge-primary" : "badge-secondary"
+                }`}
             >
               {tipoLabel}
             </span>

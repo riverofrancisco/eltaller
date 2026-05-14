@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Marcellus, Quicksand } from "next/font/google";
 import "./globals.css";
 
-const nunito = Nunito({
+const quicksand = Quicksand({
   subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+const marcellus = Marcellus({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-display",
   display: "swap",
 });
 
@@ -27,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" data-theme="eltaller" className={nunito.className}>
+    <html lang="es" data-theme="eltaller" className={`${marcellus.variable} ${quicksand.variable} ${quicksand.className}`}>
       <body suppressHydrationWarning>{children}</body>
     </html>
   );

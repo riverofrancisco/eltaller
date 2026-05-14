@@ -84,12 +84,10 @@ export default function ClaseCard({
             label={clasesDict.ctaInscripcion}
             message={
               lang === "es"
-                ? `Hola! Quiero información sobre ${
-                    clase.id === "instrumento" ? "las clases de " : ""
-                  }${dict.nombre}.`
-                : `Hi! I would like information about ${
-                    clase.id === "instrumento" ? "the classes for " : ""
-                  }${dict.nombre}.`
+                ? `Hola! Quiero información sobre ${clase.id === "instrumento" ? "las clases de " : ""
+                }${dict.nombre}.`
+                : `Hi! I would like information about ${clase.id === "instrumento" ? "the classes for " : ""
+                }${dict.nombre}.`
             }
             size="sm"
           />
