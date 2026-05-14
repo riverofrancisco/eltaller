@@ -29,10 +29,10 @@
     ],
     "mision": "Aprender, Crear y Crecer desde el arte",
     "valores": [
-      { "titulo": "Integridad", "descripcion": "Priorizamos el proceso individual de cada persona desde el comienzo, acompañando su evolución única." },
-      { "titulo": "Inclusión", "descripcion": "Abrimos las puertas a todos, sin importar la edad ni la experiencia." },
-      { "titulo": "Creatividad", "descripcion": "Fomentamos la expresión propia y el pensamiento creativo." },
-      { "titulo": "Comunidad", "descripcion": "Construimos lazos entre alumnos, docentes y familias." }
+      { "titulo": "Integridad", "descripcion": "Promovemos el desarrollo de diferentes artes en un ambiente distendido, de respeto, cuidado y valoración de cada ser." },
+      { "titulo": "Integración", "descripcion": "Acompañamos cada proceso de aprendizaje, único e intransferible, integrando talentos, tiempos y formas de expresión." },
+      { "titulo": "Creatividad", "descripcion": "Invitamos y alentamos a que cada integrante descubra su potencial y lo transforme en expresión artística." },
+      { "titulo": "Comunidad", "descripcion": "Construimos lazos donde estudiantes, docentes y familias aprendemos, creamos y crecemos juntos." }
     ]
   },
   "clases": {
