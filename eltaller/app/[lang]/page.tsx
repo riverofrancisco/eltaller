@@ -22,8 +22,8 @@ export default async function HomePage({
       <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-br from-base-200 via-base-100 to-base-100">
         {/* Background decoration */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 -left-24 w-80 h-80 bg-secondary/20 rounded-full blur-3xl" />
+          <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/50 dark:bg-primary/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 -left-24 w-80 h-80 bg-secondary/30 dark:bg-secondary/20 rounded-full blur-3xl" />
         </div>
 
         <div className="container-max section-padding w-full relative z-10">

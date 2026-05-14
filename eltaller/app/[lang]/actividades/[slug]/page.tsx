@@ -124,8 +124,8 @@ export default async function ActividadDetailPage({
       >
         {/* Decoración de fondo */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute -top-16 -right-16 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 -left-16 w-64 h-64 bg-secondary/10 rounded-full blur-3xl" />
+          <div className="absolute -top-16 -right-16 w-72 h-72 bg-primary/30 dark:bg-primary/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 -left-16 w-64 h-64 bg-secondary/30 dark:bg-secondary/10 rounded-full blur-3xl" />
         </div>
 
         <div className="container-max relative z-10">
