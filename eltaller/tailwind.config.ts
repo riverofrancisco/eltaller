@@ -1,80 +1,67 @@
 import type { Config } from "tailwindcss";
+import daisyui from "daisyui";
 
-const config = {
-  darkMode: ["class"],
+const config: Config = {
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
-  prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
-    extend: {
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-      },
-    },
+    extend: {},
   },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+  plugins: [daisyui],
+  daisyui: {
+    themes: [
+      {
+        eltaller: {
+          "primary": "#d1a3ff",
+          "primary-content": "#1a0030",
+          "secondary": "#b8edc7",
+          "secondary-content": "#0d2e18",
+          "accent": "#f97316",
+          "accent-content": "#ffffff",
+          "neutral": "#1f1f1f",
+          "neutral-content": "#f5f5f5",
+          "base-100": "#ffffff",
+          "base-200": "#f9f0ff",
+          "base-300": "#ede9fe",
+          "base-content": "#1a0030",
+          "info": "#7dd3fc",
+          "success": "#b8edc7",
+          "warning": "#fde68a",
+          "error": "#fca5a5",
+        },
+      },
+      {
+        eltallerdark: {
+          "primary": "#d1a3ff",          // Mismo violeta pero resaltará sobre oscuro
+          "primary-content": "#1a0030",
+          "secondary": "#b8edc7",        // Mismo verde
+          "secondary-content": "#0d2e18",
+          "accent": "#fb923c",
+          "accent-content": "#ffffff",
+          "neutral": "#110e16",
+          "neutral-content": "#d1d5db",
+          "base-100": "#1a1625",         // Carbón con matiz violeta (calma)
+          "base-200": "#13101c",         // Más oscuro para contraste
+          "base-300": "#231f2e",         // Más claro para capas
+          "base-content": "#e5e1f0",     // Blanco suave con matiz violeta
+          "info": "#7dd3fc",
+          "success": "#b8edc7",
+          "warning": "#fde68a",
+          "error": "#fca5a5",
+          "--rounded-btn": "1.9rem",      // Mantener suavidad en bordes
+        },
+      },
+    ],
+    darkTheme: "eltallerdark",
+    base: true,
+    styled: true,
+    utils: true,
+    logs: false,
+  },
+};
 
 export default config;

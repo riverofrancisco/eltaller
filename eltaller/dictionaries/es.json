@@ -1,0 +1,136 @@
+{
+  "lang": "es",
+  "nav": {
+    "inicio": "Inicio",
+    "sobreNosotros": "Sobre nosotros",
+    "clases": "Clases",
+    "docentes": "Docentes",
+    "actividades": "Eventos",
+    "contacto": "Contacto"
+  },
+  "hero": {
+    "titulo": "Un espacio para aprender, crear y crecer",
+    "subtitulo": "Actividades artísticas para la comunidad. Canto, Instrumento, Ensamble, Habilidades Sociales, Teatro de Objetos y más.",
+    "cta": "Conocé nuestras actividades",
+    "ctaContacto": "Escribinos por WhatsApp"
+  },
+  "sobreNosotros": {
+    "titulo": "Sobre nosotros",
+    "subtitulo": "Somos El Taller",
+    "descripcion": [
+      "EL Taller “Espacio de Arte” abrió sus puertas en el año 2005 bajo el nombre de Escuela Integral de Canto “Quica Susmaes” y con el lema: “Quien canta sus males espanta”.",
+      "Desde sus comienzos, promovió y dictó clases de canto e instrumentos musicales con la misión de propiciar encuentros de afinidad común y aprendizaje compartido.",
+      "Por nuestra casa han pasado personas de todas las edades y niveles, muchas de ellas dando sus primeros pasos profesionales.",
+      "Creemos que la música es una fiel compañera y que, como todo arte, ejerce una función transformadora en cada ser.",
+      "Por eso, hace algunos años decidimos desplegar nuestras alas y abrir espacio a nuevas disciplinas artísticas que también puedan despertar, acompañar y transformar a quienes estén disponibles y permeables a esa experiencia.",
+      "Cambiamos de nombre y de lugar porque elegimos confiar en nuestra intuición y evolucionar junto con nuestra esencia.",
+      "Invitamos a todas las personas que resuenen con nuestra misión de Aprender, Crear y Crecer desde el arte, a sumarse y formar parte de la familia de EL Taller. Espacio de Arte.",
+      "¡Bienvenidos!"
+    ],
+    "mision": "Aprender, Crear y Crecer desde el arte",
+    "valores": [
+      { "titulo": "Integridad", "descripcion": "Promovemos el desarrollo de diferentes artes en un ambiente distendido, de respeto, cuidado y valoración de cada ser." },
+      { "titulo": "Integración", "descripcion": "Acompañamos cada proceso de aprendizaje, único e intransferible, integrando talentos, tiempos y formas de expresión." },
+      { "titulo": "Creatividad", "descripcion": "Invitamos y alentamos a que cada integrante descubra su potencial y lo transforme en expresión artística." },
+      { "titulo": "Comunidad", "descripcion": "Construimos lazos donde estudiantes, docentes y familias aprendemos, creamos y crecemos juntos." }
+    ]
+  },
+  "clases": {
+    "titulo": "Nuestras clases",
+    "subtitulo": "Encontrá la mejor propuesta para vos",
+    "descripcion": "Ofrecemos clases individuales y grupales para todas las edades y niveles. Para más información o inscribirte, contactanos por WhatsApp.",
+    "ctaInscripcion": "Inscribirse por WhatsApp",
+    "niveles": {
+      "principiante": "Principiante",
+      "intermedio": "Intermedio",
+      "avanzado": "Avanzado",
+      "niños": "Niños",
+      "adolescentes": "Adolescentes",
+      "adultos": "Adultos",
+      "jovenes": "Jóvenes",
+      "mujeres": "Mujeres",
+      "vocacional": "Vocacional"
+    },
+    "modalidades": {
+      "individual": "Clase individual",
+      "grupal": "Clase grupal",
+      "mixta": "Individual o Grupal"
+    },
+    "items": {
+      "habilidades-sociales": {
+        "nombre": "Taller de Habilidades Sociales",
+        "descripcion": "Espacio terapéutico y educativo para adolescentes. Mejora la comunicación, gestión emocional y resolución de conflictos. Jueves 16 a 17.30 hs."
+      },
+      "canto": {
+        "nombre": "Clases de Canto",
+        "descripcion": "Destinadas al despertar de lo que aún duerme y al mejoramiento de lo que ya existe. Para adolescentes y adultos. Individuales o dúos."
+      },
+      "ensamble-vocal": {
+        "nombre": "Ensamble Vocal \"Todos Somos Uno\"",
+        "descripcion": "Grupo vocacional femenino enfocado en la construcción de armonías vocales y el crecimiento compartido. Martes 19.30 a 21 hs."
+      },
+      "ensamble-jovenes": {
+        "nombre": "Ensamble de Canto para jóvenes",
+        "descripcion": "Aprendé a cantar a dos o más voces, creciendo y creando juntos diferentes armonías vocales. Jueves 19 a 20.30 hs."
+      },
+      "teatro-objetos": {
+        "nombre": "Teatro de Objetos",
+        "descripcion": "Basado en el teatro de títeres, dirigido a adultos interesados en volcar su creatividad en este arte. Lunes 19.30 a 21 hs."
+      },
+      "instrumento": {
+        "nombre": "Instrumento (Piano, Guitarra y Ukelele)",
+        "descripcion": "Introducción al mundo de la música para acompañarte toda la vida. Nivel principiante e intermedio. Clases particulares y grupales."
+      }
+    }
+  },
+  "docentes": {
+    "titulo": "Nuestros docentes",
+    "subtitulo": "Un equipo dedicado y con experiencia",
+    "descripcion": "Nuestros docentes son profesionales con vocación por la enseñanza. Cada uno aporta su propia experiencia y estilo para enriquecer el aprendizaje."
+  },
+  "actividades": {
+    "titulo": "Eventos",
+    "subtitulo": "Momentos que nos unen",
+    "descripcion": "En El Taller la música no termina en el aula. Organizamos dos tipos de eventos donde alumnos e invitados comparten el escenario y el canto.",
+    "tipos": {
+      "presentacion": "Presentación de Canto",
+      "karaoketon": "Karaoketon"
+    },
+    "etiquetas": {
+      "anual": "Anual · Diciembre",
+      "trimestral": "Trimestral",
+      "fotos": "Álbum de fotos",
+      "video": "Ver en YouTube"
+    },
+    "items": {
+      "presentacion-canto": {
+        "nombre": "Presentación de Canto",
+        "descripcion": "El gran evento del año. Cada diciembre, los alumnos suben al escenario para mostrar todo lo que aprendieron durante el año. Una noche de música, emoción y comunidad."
+      },
+      "karaoketon": {
+        "nombre": "Karaoketon",
+        "descripcion": "Encuentros trimestrales, íntimos e interactivos. No solo cantan los alumnos: ¡los invitados que quieran participar también tienen su momento en el micrófono! Una fiesta compartida con karaoke, improvisación y mucho disfrute."
+      }
+    },
+    "proximamente": "Próximamente",
+    "verMas": "Ver más",
+    "verAlbum": "Ver álbum de fotos",
+    "verVideo": "Ver en YouTube"
+  },
+  "contacto": {
+    "titulo": "Contacto",
+    "subtitulo": "¿Querés saber más?",
+    "descripcion": "Escribinos por WhatsApp o por mail y te respondemos a la brevedad.",
+    "whatsappCta": "Escribir por WhatsApp",
+    "emailCta": "Enviar un email",
+    "direccion": "Dirección",
+    "telefono": "Teléfono",
+    "email": "Email"
+  },
+  "footer": {
+    "derechos": "Todos los derechos reservados",
+    "descripcion": "El Taller — Espacio de Arte. Música para todas las edades."
+  },
+  "comingSoon": "Próximamente",
+  "learnMore": "Conocer más"
+}

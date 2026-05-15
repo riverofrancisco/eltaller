@@ -1,0 +1,136 @@
+{
+  "lang": "en",
+  "nav": {
+    "inicio": "Home",
+    "sobreNosotros": "About us",
+    "clases": "Classes",
+    "docentes": "Teachers",
+    "actividades": "Events",
+    "contacto": "Contact"
+  },
+  "hero": {
+    "titulo": "A space to learn, create and grow",
+    "subtitulo": "Artistic activities for the community. Singing, Instruments, Ensemble, Social Skills, Object Theater and more.",
+    "cta": "Explore our activities",
+    "ctaContacto": "Message us on WhatsApp"
+  },
+  "sobreNosotros": {
+    "titulo": "About us",
+    "subtitulo": "We are El Taller",
+    "descripcion": [
+      "EL Taller “Espacio de Arte” opened its doors in 2005 under the name 'Quica Susmaes' Integral Singing School and with the motto: 'He who sings, scares away his woes.'",
+      "From its beginnings, it promoted and taught singing and musical instrument classes with the mission of fostering encounters of common affinity and shared learning.",
+      "People of all ages and levels have passed through our house, many of them taking their first professional steps.",
+      "We believe that music is a faithful companion and that, like all art, it exerts a transforming function in every being.",
+      "That is why, a few years ago, we decided to spread our wings and open space to new artistic disciplines that can also awaken, accompany, and transform those who are available and permeable to that experience.",
+      "We changed our name and location because we chose to trust our intuition and evolve along with our essence.",
+      "We invite everyone who resonates with our mission to Learn, Create, and Grow through art, to join and become part of the EL Taller. Espacio de Arte family.",
+      "Welcome!"
+    ],
+    "mision": "Learn, Create and Grow through art",
+    "valores": [
+      { "titulo": "Integrity", "descripcion": "We promote the development of different arts in a relaxed environment of respect, care, and appreciation for each being." },
+      { "titulo": "Integration", "descripcion": "We accompany each learning process, unique and non-transferable, integrating talents, times, and forms of expression." },
+      { "titulo": "Creativity", "descripcion": "We invite and encourage each member to discover their potential and transform it into artistic expression." },
+      { "titulo": "Community", "descripcion": "We build bonds where students, teachers, and families learn, create, and grow together." }
+    ]
+  },
+  "clases": {
+    "titulo": "Our classes",
+    "subtitulo": "Discover our proposals",
+    "descripcion": "We offer individual and group classes for all ages and levels. For more information or to enroll, contact us via WhatsApp.",
+    "ctaInscripcion": "Enroll via WhatsApp",
+    "niveles": {
+      "principiante": "Beginner",
+      "intermedio": "Intermediate",
+      "avanzado": "Advanced",
+      "niños": "Children",
+      "adolescentes": "Teens",
+      "adultos": "Adults",
+      "jovenes": "Youth",
+      "mujeres": "Women",
+      "vocacional": "Vocational"
+    },
+    "modalidades": {
+      "individual": "Individual class",
+      "grupal": "Group class",
+      "mixta": "Individual or Group"
+    },
+    "items": {
+      "habilidades-sociales": {
+        "nombre": "Social Skills Workshop",
+        "descripcion": "Therapeutic and educational space for teens. Improves communication, emotional management, and conflict resolution. Thursdays 4 PM to 5.30 PM."
+      },
+      "canto": {
+        "nombre": "Singing Classes",
+        "descripcion": "Destined for the awakening of what still sleeps and the improvement of what already exists. For teens and adults. Individual or duos."
+      },
+      "ensamble-vocal": {
+        "nombre": "Vocal Ensemble \"Todos Somos Uno\"",
+        "descripcion": "Female vocational group focused on building vocal harmonies and shared artistic growth. Tuesdays 7.30 PM to 9 PM."
+      },
+      "ensamble-jovenes": {
+        "nombre": "Youth Singing Ensemble",
+        "descripcion": "Group where you learn to sing in two or more voices, growing and creating different vocal harmonies together. Thursdays 7 PM to 8.30 PM."
+      },
+      "teatro-objetos": {
+        "nombre": "Object Theater",
+        "descripcion": "Parting from puppet theater tools, designed for adults interested in pouring their creativity into this art. Mondays 7.30 PM to 9 PM."
+      },
+      "instrumento": {
+        "nombre": "Instrument (Piano, Guitar and Ukulele)",
+        "descripcion": "Musical instruments introduce us to the world of music and can accompany us for a lifetime. Beginner and intermediate levels. Private and group classes."
+      }
+    }
+  },
+  "docentes": {
+    "titulo": "Our teachers",
+    "subtitulo": "A passionate and experienced team",
+    "descripcion": "Our teachers are professional musicians with a vocation for teaching. Each brings their own experience and style to enrich the learning experience."
+  },
+  "actividades": {
+    "titulo": "Events",
+    "subtitulo": "Moments that bring us together",
+    "descripcion": "At El Taller, music doesn't end in the classroom. We organize two types of events where students and guests share the stage and the song.",
+    "tipos": {
+      "presentacion": "Singing Showcase",
+      "karaoketon": "Karaoke"
+    },
+    "etiquetas": {
+      "anual": "Annual · December",
+      "trimestral": "Quarterly",
+      "fotos": "Photo album",
+      "video": "Watch on YouTube"
+    },
+    "items": {
+      "presentacion-canto": {
+        "nombre": "Singing Showcase",
+        "descripcion": "The big event of the year. Every December, students take the stage to show everything they've learned throughout the year. A night of music, emotion and community."
+      },
+      "karaoketon": {
+        "nombre": "Karaoke",
+        "descripcion": "Quarterly, intimate and interactive gatherings. It's not just students who sing: guests who want to join in also get their moment at the microphone! A shared celebration with karaoke, improvisation and lots of fun."
+      }
+    },
+    "proximamente": "Coming soon",
+    "verMas": "See more",
+    "verAlbum": "View photo album",
+    "verVideo": "Watch on YouTube"
+  },
+  "contacto": {
+    "titulo": "Contact",
+    "subtitulo": "Want to know more?",
+    "descripcion": "Message us on WhatsApp or by email and we'll get back to you as soon as possible.",
+    "whatsappCta": "Message on WhatsApp",
+    "emailCta": "Send an email",
+    "direccion": "Address",
+    "telefono": "Phone",
+    "email": "Email"
+  },
+  "footer": {
+    "derechos": "All rights reserved",
+    "descripcion": "El Taller — Art Space. Music for all ages."
+  },
+  "comingSoon": "Coming soon",
+  "learnMore": "Learn more"
+}

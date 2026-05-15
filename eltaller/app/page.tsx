@@ -1,42 +1,22 @@
 'use client';
 
-/* import Hero from "@/components/hero";
-import ConnectSupabaseSteps from "@/components/tutorial/connect-supabase-steps";
-import SignUpUserSteps from "@/components/tutorial/sign-up-user-steps";
-import { hasEnvVars } from "@/utils/supabase/check-env-vars";
-
-export default async function Index() {
-  return (
-    <>
-      <Hero />
-      <main className="flex-1 flex flex-col gap-6 px-4">
-        <h2 className="font-medium text-xl mb-4">Next steps</h2>
-        {hasEnvVars ? <SignUpUserSteps /> : <ConnectSupabaseSteps />}
-      </main>
-    </>
-  );
-}
- */
-
-import Image from 'next/image'; //-
-import styles from './Welcome.module.css'; //-
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import AddBoxIcon from '@mui/icons-material/AddBox';
-import AlertDialog from '@/components/Dialogs/EventInfoDialog';
-import LibraryMusicRoundedIcon from '@mui/icons-material/LibraryMusicRounded';
-import IconButton from '@mui/material/IconButton';
-import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import Image from 'next/image';
+import ContactInfoDialog from '@/components/Dialogs/ContactInfoDialog';
+import ActivityCard from '@/components/ui/cards/ActivityCard';
+import activities from '@/mock/activities.json';
+import { 
+  IconBrandInstagram, 
+  IconBrandFacebook, 
+  IconMapPin, 
+  IconBrandYoutube, 
+  IconBrandWhatsapp,
+  IconX,
+  IconCheck
+} from '@tabler/icons-react';
 
 export default function Welcome() {
   const handleOption1Click = () => {
-    window.open(
-      'https://drive.google.com/file/d/1joPflGmy9tPJuYyynJ2z-DKksWjcMLId/view?usp=sharing',
-      '_blank'
-    );
+    console.log('Option 1 clicked');
   };
 
   const handleOption2Click = () => {
@@ -47,85 +27,86 @@ export default function Welcome() {
   };
 
   return (
-    <div className={styles.pageContainer}>
-      <div className={styles.container}>
-        <div className={styles.profile}>
+    <div className="min-h-screen bg-base-200 flex items-center justify-center py-10 px-4">
+      <div className="max-w-md w-full flex flex-col gap-6">
+        <div className="flex flex-col items-center gap-2">
           <Image
             src="/images/logo.png"
             alt="El Taller"
             width={150}
             height={150}
-            className={styles.avatar}
+            className="rounded-full shadow-lg border-4 border-base-100 mb-2 bg-base-100"
           />
-          <h1 className={styles.title}>El Taller</h1>
-          <p className={styles.description}>Espacio de Arte</p>
+          <h1 className="text-4xl font-extrabold text-primary">El Taller</h1>
+          <p className="text-base-content/70 font-semibold tracking-widest uppercase">Espacio de Arte</p>
         </div>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            gap: '15px',
-            margin: '5px 0 15px 0',
-          }}
-        >
-          <IconButton
-            href="https://www.instagram.com/eltaller.espaciodearte/"
-            target="_blank"
-            sx={{
-              color: 'black',
-            }}
-          >
-            <InstagramIcon />
-          </IconButton>
-          <IconButton
-            href="https://www.facebook.com/eltaller.espaciodearte"
-            target="_blank"
-            sx={{
-              color: 'black',
-            }}
-          >
-            <FacebookRoundedIcon />
-          </IconButton>
-          <IconButton
-            href="https://www.youtube.com/@eltaller.espaciodearte"
-            target="_blank"
-            sx={{
-              color: 'black',
-            }}
-          >
-            <YouTubeIcon />
-          </IconButton>
-        </div>
-
-        <div className={styles.links}>
-          <AlertDialog
-            title="KARAOKETÓN 29/06"
-            dialogTitle="KARAOKETÓN"
-            option1="Quiero cantar"
-            option1Icon={<LibraryMusicRoundedIcon />}
-            option2="Quiero Contribuir"
-            option2Icon={<VolunteerActivismIcon />}
-            onOption1Click={handleOption1Click}
-            onOption2Click={handleOption2Click}
-          />
-
+        
+        <div className="flex justify-center gap-3 my-2">
           <a
             href="https://api.whatsapp.com/send?phone=541122509184"
             target="_blank"
-            className={styles.link}
+            rel="noreferrer"
+            className="btn btn-circle btn-ghost bg-base-100 shadow-sm hover:text-success hover:bg-success/10 text-base-content"
           >
-            Escribinos
-            <WhatsAppIcon />
+            <IconBrandWhatsapp stroke={1.5} />
           </a>
-
+          <a
+            href="https://www.instagram.com/eltaller.espaciodearte/"
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-circle btn-ghost bg-base-100 shadow-sm hover:text-accent hover:bg-accent/10 text-base-content"
+          >
+            <IconBrandInstagram stroke={1.5} />
+          </a>
+          <a
+            href="https://www.facebook.com/eltaller.espaciodearte"
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-circle btn-ghost bg-base-100 shadow-sm hover:text-info hover:bg-info/10 text-base-content"
+          >
+            <IconBrandFacebook stroke={1.5} />
+          </a>
+          <a
+            href="https://www.youtube.com/@eltaller.espaciodearte"
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-circle btn-ghost bg-base-100 shadow-sm hover:text-error hover:bg-error/10 text-base-content"
+          >
+            <IconBrandYoutube stroke={1.5} />
+          </a>
           <a
             href="https://maps.app.goo.gl/XzDtU67PiLhYYVVG7"
             target="_blank"
-            className={styles.link}
+            rel="noreferrer"
+            className="btn btn-circle btn-ghost bg-base-100 shadow-sm hover:text-primary hover:bg-primary/10 text-base-content"
           >
-            Donde estamos
-            <LocationOnIcon />
+            <IconMapPin stroke={1.5} />
           </a>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3 w-full">
+            {activities.map((a: any, idx: number) => (
+              <ActivityCard
+                key={idx}
+                title={a.title}
+                description={a.description}
+                color={a.color}
+              />
+            ))}
+          </div>
+          
+          <ContactInfoDialog
+            title="Quiero saber más"
+            dialogTitle="Contanos qué te interesa"
+            action1="Cancelar"
+            action1Icon={<IconX size={20} />}
+            action2="Enviar"
+            action2Icon={<IconCheck size={20} />}
+            dialogOptions={["CANTO", 'INSTRUMENTO', 'ENSAMBLE', 'OTROS']}
+            onAction1Click={handleOption1Click}
+            onAction2Click={handleOption2Click}
+          />
         </div>
       </div>
     </div>

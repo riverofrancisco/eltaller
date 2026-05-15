@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Canto",
+        "description": "Exploramos la voz con técnica y expresión, trabajando respiración, afinación y estilo en repertorios variados para que cada persona encuentre su propia identidad sonora.",
+        "color": "rgba(176, 145, 242"
+    },
+    {
+        "title": "Instrumento",
+        "description": "Clases prácticas para desarrollar técnica, lectura y musicalidad en tu instrumento, con repertorio a medida y ejercicios enfocados en progresar de forma sólida y disfrutable.",
+        "color": "rgba(174, 217, 143"
+    },
+    {
+        "title": "Ensamble vocal",
+        "description": "Cantamos en grupo abordando armonías y escucha, creando una experiencia colectiva que potencia la voz de cada integrante.",
+        "color": "rgba(227, 140, 73"
+    }
+]

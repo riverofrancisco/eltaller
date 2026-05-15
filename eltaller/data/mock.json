@@ -1,0 +1,555 @@
+{
+  "site": {
+    "name": "El Taller",
+    "fullName": "El Taller — Espacio de Arte",
+    "tagline": "Un espacio para aprender, crear y crecer",
+    "taglineEn": "A space to learn, create and grow",
+    "email": "info@eltallerespaciodearte.com.ar",
+    "phone": "+54 11 2250-9184",
+    "whatsapp": "541122509184",
+    "address": "Bulnes 638, C1176 CABA, Argentina",
+    "instagram": "https://www.instagram.com/eltaller.espaciodearte/",
+    "facebook": "https://www.facebook.com/eltaller.espaciodearte",
+    "youtube": "https://www.youtube.com/@eltaller.espaciodearte",
+    "mapsUrl": "https://maps.app.goo.gl/5HtxtReEExd114cg9",
+    "domain": "https://eltallerespaciodearte.com.ar"
+  },
+  "classes": [
+    {
+      "id": "canto",
+      "slug": "canto",
+      "image": "/images/clases/canto.jpg",
+      "levels": [
+        "adolescentes",
+        "adultos"
+      ],
+      "duration": "45/60 min",
+      "modality": "mixta"
+    },
+    {
+      "id": "ensamble-vocal",
+      "slug": "ensamble-vocal",
+      "image": "/images/clases/ensamble-vocal.jpg",
+      "levels": [
+        "mujeres",
+        "vocacional"
+      ],
+      "duration": "90 min",
+      "modality": "grupal"
+    },
+    {
+      "id": "ensamble-jovenes",
+      "slug": "ensamble-jovenes",
+      "image": "/images/clases/ensamble-jovenes.jpg",
+      "levels": [
+        "jovenes"
+      ],
+      "duration": "90 min",
+      "modality": "grupal"
+    },
+    {
+      "id": "instrumento",
+      "slug": "instrumento",
+      "image": "/images/clases/instrumento.jpg",
+      "levels": [
+        "principiante",
+        "intermedio"
+      ],
+      "duration": "45 min",
+      "modality": "mixta"
+    },
+    {
+      "id": "habilidades-sociales",
+      "slug": "habilidades-sociales",
+      "image": "/images/clases/habilidades-sociales.jpg",
+      "levels": [
+        "adolescentes"
+      ],
+      "duration": "90 min",
+      "modality": "grupal"
+    },
+    {
+      "id": "teatro-objetos",
+      "slug": "teatro-objetos",
+      "image": "/images/clases/teatro-objetos.jpg",
+      "levels": [
+        "adultos"
+      ],
+      "duration": "90 min",
+      "modality": "grupal"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "docente-1",
+      "name": "Maria Paracampo",
+      "photo": "/images/teachers/maria-paracampo-violet.png",
+      "specialties": [
+        "Canto",
+        "Ensamble",
+        "Instrumento"
+      ],
+      "email": ""
+    },
+    {
+      "id": "docente-2",
+      "name": "Catalina Rivero",
+      "photo": "/images/teachers/catalina-rivero.webp",
+      "specialties": [
+        "Canto",
+        "Ensamble",
+        "Instrumento"
+      ],
+      "email": ""
+    },
+    {
+      "id": "docente-3",
+      "name": "Eugenia Gomez Diaz",
+      "photo": "/images/teachers/eugenia-gomez-diaz-reframed.png",
+      "specialties": [
+        "Taller de Habilidades Sociales"
+      ],
+      "email": ""
+    }, {
+      "id": "docente-4",
+      "name": "Jose María Rivero",
+      "photo": "/images/teachers/jose-maria-rivero-plain.png",
+      "specialties": [
+        "Teatro de Objetos"
+      ],
+      "email": ""
+    }
+  ],
+  "students": [
+    {
+      "id": "alumno-4",
+      "name": "Agustin",
+      "lastName": ""
+    },
+    {
+      "id": "alumno-5",
+      "name": "Marcelo",
+      "lastName": ""
+    },
+    {
+      "id": "alumno-6",
+      "name": "Mili",
+      "lastName": ""
+    },
+    {
+      "id": "alumno-7",
+      "name": "Lucía",
+      "lastName": ""
+    },
+    {
+      "id": "alumno-8",
+      "name": "Camila",
+      "lastName": ""
+    },
+    {
+      "id": "alumno-9",
+      "name": "Lourdes",
+      "lastName": ""
+    },
+    {
+      "id": "alumno-10",
+      "name": "Diego",
+      "lastName": ""
+    },
+    {
+      "id": "alumno-11",
+      "name": "Silvina",
+      "lastName": ""
+    },
+    {
+      "id": "alumno-12",
+      "name": "May",
+      "lastName": ""
+    },
+    {
+      "id": "alumno-13",
+      "name": "Gerald",
+      "lastName": ""
+    },
+    {
+      "id": "alumno-14",
+      "name": "Olga",
+      "lastName": ""
+    },
+    {
+      "id": "alumno-15",
+      "name": "Rocío",
+      "lastName": ""
+    },
+    {
+      "id": "alumno-16",
+      "name": "Sara",
+      "lastName": ""
+    },
+    {
+      "id": "alumno-17",
+      "name": "Ale",
+      "lastName": ""
+    },
+    {
+      "id": "alumno-18",
+      "name": "Mariela",
+      "lastName": ""
+    }
+  ],
+  "activities": [
+    {
+      "id": "presentacion-canto-2025",
+      "slug": "presentacion-canto-2025",
+      "type": "presentacion",
+      "date": "2025-12-18",
+      "image": "/images/activities/presentacion-2025.jpg",
+      "album": [
+        "/images/activities/presentacion-2025/Alejandra.jpg",
+        "/images/activities/presentacion-2025/Camila.jpg",
+        "/images/activities/presentacion-2025/Celebrando 20 a;os.jpg",
+        "/images/activities/presentacion-2025/Ensamble Vocal Todos Somos Uno.jpg",
+        "/images/activities/presentacion-2025/Ensamble.jpg",
+        "/images/activities/presentacion-2025/Lourdes.jpg",
+        "/images/activities/presentacion-2025/Lucia.jpg",
+        "/images/activities/presentacion-2025/Marcelo.jpg",
+        "/images/activities/presentacion-2025/Maria y Cata final.jpg",
+        "/images/activities/presentacion-2025/Maria y Cata.jpg",
+        "/images/activities/presentacion-2025/Mariela.jpg",
+        "/images/activities/presentacion-2025/Olga.jpg",
+        "/images/activities/presentacion-2025/Rocio.jpg",
+        "/images/activities/presentacion-2025/Saludo final.jpg",
+        "/images/activities/presentacion-2025/Sara.jpg"
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=FkxB5Osv45I",
+      "featured": true,
+      "songs": [
+        {
+          "title": "Todos los días un poco",
+          "artist": "León Gieco",
+          "students": [],
+          "guests": ["Profes Cata y María"]
+        },
+        {
+          "title": "La despedida",
+          "artist": "Cami",
+          "students": [
+            "alumno-5"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Genio atrapado",
+          "artist": "Christina Aguilera",
+          "students": [
+            "alumno-7"
+          ],
+          "guests": []
+        },
+        {
+          "title": "La flor de la canela",
+          "artist": "Chabuca Granda",
+          "students": [
+            "alumno-14"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Zamba de Lozano",
+          "artist": "Cuchi Leguizamón",
+          "students": [
+            "alumno-16"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Hasta la raíz",
+          "artist": "Natalia Lafourcade",
+          "students": [
+            "alumno-6"
+          ],
+          "guests": []
+        },
+        {
+          "title": "San Lucas",
+          "artist": "Kevin Kaarl",
+          "students": [
+            "alumno-4"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Cantar cantar cantar",
+          "artist": "Juan Carlos Baglietto",
+          "students": [
+            "alumno-17"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Uno los dos",
+          "artist": "Miranda!",
+          "students": [
+            "alumno-9"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Training Season",
+          "artist": "Dua Lipa",
+          "students": [
+            "alumno-8"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Dicen",
+          "artist": "Marcela Morelo",
+          "students": [
+            "alumno-18"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Mientes tan bien",
+          "artist": "Sin Bandera",
+          "students": [
+            "alumno-5"
+          ],
+          "guests": ["Profe Cata"]
+        },
+        {
+          "title": "My man",
+          "artist": "Barbra Streisand",
+          "students": [
+            "alumno-15"
+          ],
+          "guests": []
+        },
+        {
+          "title": "Las cosas que pasan",
+          "artist": "Tan Bionica",
+          "students": [],
+          "guests": ["Ensamble Juvenil"]
+        },
+        {
+          "title": "Tren del cielo",
+          "artist": "Soledad Pastorutti",
+          "students": [],
+          "guests": ["Ensamble Vocal TSU"]
+        },
+        {
+          "title": "Canción de amor",
+          "artist": "Alejandro Lerner",
+          "students": [],
+          "guests": ["Ensamble Vocal TSU"]
+        },
+        {
+          "title": "Honrar la vida",
+          "artist": "Eladia Blázquez",
+          "students": [],
+          "guests": ["Ensamble Vocal TSU"]
+        },
+        {
+          "title": "Reencuentro",
+          "artist": "Amaranta",
+          "students": [],
+          "guests": ["Todos"]
+        }
+      ]
+    },
+    {
+      "id": "presentacion-canto-2024",
+      "slug": "presentacion-canto-2024",
+      "type": "presentacion",
+      "date": "2024-12-12",
+      "image": "/images/actividades/presentacion-2024.jpg",
+      "album": [
+        "/images/activities/presentacion-2024/Alegria.jpg",
+        "/images/activities/presentacion-2024/Cata y Maria, tal vez se puede recortar.jpg",
+        "/images/activities/presentacion-2024/Celebracion.jpg",
+        "/images/activities/presentacion-2024/Diego.jpg",
+        "/images/activities/presentacion-2024/Ensamble 2.jpg",
+        "/images/activities/presentacion-2024/Ensamble 3.jpg",
+        "/images/activities/presentacion-2024/Ensamble Vocal Todos Somos Uno.jpg",
+        "/images/activities/presentacion-2024/Ensamble.jpg",
+        "/images/activities/presentacion-2024/Final mejor.jpg",
+        "/images/activities/presentacion-2024/Final.jpg",
+        "/images/activities/presentacion-2024/Foto grupal.jpg",
+        "/images/activities/presentacion-2024/Lourdes mejor.jpg",
+        "/images/activities/presentacion-2024/Lourdes.jpg",
+        "/images/activities/presentacion-2024/Lucia y profe Cata.jpg",
+        "/images/activities/presentacion-2024/Lucia.jpg",
+        "/images/activities/presentacion-2024/MOmentos.jpg",
+        "/images/activities/presentacion-2024/Mai y Gerald 2.jpg",
+        "/images/activities/presentacion-2024/Mai y Gerald.jpg",
+        "/images/activities/presentacion-2024/Mili mejor.jpg",
+        "/images/activities/presentacion-2024/Mili.jpg",
+        "/images/activities/presentacion-2024/Olga.jpg",
+        "/images/activities/presentacion-2024/Palabras de bienvenida.jpg",
+        "/images/activities/presentacion-2024/Profe Cata.jpg",
+        "/images/activities/presentacion-2024/Rocio.jpg",
+        "/images/activities/presentacion-2024/Silvina.jpg"
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=eysZGJRfIq8",
+      "featured": false,
+      "songs": [
+        {
+          "title": "Algo Contigo",
+          "artist": "Vicentico",
+          "students": ["alumno-9"],
+          "guests": []
+        },
+        {
+          "title": "Por tu maldito amor",
+          "artist": "Vicente Fernández",
+          "students": ["alumno-10"],
+          "guests": []
+        },
+        {
+          "title": "Todo es perfecto",
+          "artist": "Inspector",
+          "students": ["alumno-11"],
+          "guests": []
+        },
+        {
+          "title": "Oceans",
+          "artist": "Hillsong United",
+          "students": ["alumno-12", "alumno-13"],
+          "guests": []
+        },
+        {
+          "title": "Muñecos",
+          "artist": "Muñecos de Papel",
+          "students": ["alumno-7"],
+          "guests": []
+        },
+        {
+          "title": "Ho Capito- Lontano",
+          "artist": "Luigi Tenco",
+          "students": ["alumno-14"],
+          "guests": []
+        },
+        {
+          "title": "El trato",
+          "artist": "Alejandro Sanz",
+          "students": ["alumno-6"],
+          "guests": []
+        },
+        {
+          "title": "Stand by me",
+          "artist": "Ben E. King",
+          "students": ["alumno-7"],
+          "guests": []
+        },
+        {
+          "title": "My favourite things",
+          "artist": "Julie Andrews",
+          "students": ["alumno-15"],
+          "guests": []
+        },
+        {
+          "title": "El valle y el volcán",
+          "artist": "Jairo",
+          "students": [],
+          "guests": []
+        },
+        {
+          "title": "Zombie",
+          "artist": "The Cranberries",
+          "students": ["alumno-9"],
+          "guests": []
+        },
+        {
+          "title": "Hasta que me olvides",
+          "artist": "Luis Miguel",
+          "students": ["alumno-10"],
+          "guests": []
+        },
+        {
+          "title": "Canon in Swing",
+          "artist": "Rieks Veenker",
+          "students": [],
+          "guests": ["Ensamble Vocal TSU"]
+        },
+        {
+          "title": "Variación Pachelbel",
+          "artist": "Pachelbel",
+          "students": [],
+          "guests": ["Ensamble Vocal TSU"]
+        },
+        {
+          "title": "Como la cigarra",
+          "artist": "María Elena Walsh",
+          "students": [],
+          "guests": ["Ensamble Vocal TSU"]
+        },
+        {
+          "title": "Non mollare mai",
+          "artist": "Gigi D'Alessio",
+          "students": [],
+          "guests": ["Ensamble Vocal TSU"]
+        },
+        {
+          "title": "Donde vamos",
+          "artist": "La mancha de Rolando",
+          "students": [],
+          "guests": ["Todos"]
+        }
+      ]
+    },
+    {
+      "id": "karaoketon-2025-06-29",
+      "slug": "karaoketon-2025-06-29",
+      "type": "karaoketon",
+      "date": "2025-06-29",
+      "image": "/images/actividades/karaoketon-2025-06-29.jpg",
+      "album": [
+        "/images/activities/karaoketon-2025/Ale.jpg",
+        "/images/activities/karaoketon-2025/Amigas.jpg",
+        "/images/activities/karaoketon-2025/Camila.jpg",
+        "/images/activities/karaoketon-2025/Cancion final.jpg",
+        "/images/activities/karaoketon-2025/Diego.jpg",
+        "/images/activities/karaoketon-2025/Duo dinamico.jpg",
+        "/images/activities/karaoketon-2025/Ensamble e invitado.jpg",
+        "/images/activities/karaoketon-2025/Invitados.jpg",
+        "/images/activities/karaoketon-2025/Lucia.jpg",
+        "/images/activities/karaoketon-2025/Marcelo.jpg",
+        "/images/activities/karaoketon-2025/Mariela mejor.jpg",
+        "/images/activities/karaoketon-2025/Mariela.jpg",
+        "/images/activities/karaoketon-2025/Mili.jpg",
+        "/images/activities/karaoketon-2025/OLga.jpg",
+        "/images/activities/karaoketon-2025/Organizadores.jpg",
+        "/images/activities/karaoketon-2025/Profes.jpg",
+        "/images/activities/karaoketon-2025/Publico.jpg",
+        "/images/activities/karaoketon-2025/Rocio.jpg",
+        "/images/activities/karaoketon-2025/Silvina.jpg",
+        "/images/activities/karaoketon-2025/Sorteo.jpg",
+        "/images/activities/karaoketon-2025/ensamble.jpg",
+        "/images/activities/karaoketon-2025/sonrisas.jpg"
+      ],
+      "featured": false,
+      "songs": []
+    }
+  ],
+  "reviews": [
+    {
+      "id": "testimonio-maximo",
+      "name": "Máximo",
+      "text": "La mejor forma de introducirse en el mundo del canto. El nivel de humanidad de las clases convierte en realidad el dicho: 'quien canta, sus males espanta'. Una experiencia que hay que vivir.",
+      "stars": 5
+    },
+    {
+      "id": "testimonio-paola",
+      "name": "Paola",
+      "text": "El taller es un lugar donde aprendes a cantar, no solo desde la técnica, sino también desde el corazón, porque las profes te acompañan en el camino del aprendizaje a puro amor y responsabilidad. El taller es un espacio maravilloso!!!",
+      "stars": 5
+    },
+    {
+      "id": "testimonio-silvina",
+      "name": "Silvina",
+      "text": "Es un espacio de paz, conexión y placer vinculado a la música. Hace bien al alma, y nos permite crecer a nuestro ritmo potenciando nuestras cualidades. ¡No se lo pueden perder!",
+      "stars": 5
+    }
+  ]
+}
