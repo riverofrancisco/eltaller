@@ -14,6 +14,7 @@ import {
   IconUsers,
 } from "@tabler/icons-react";
 import { notFound } from "next/navigation";
+import ActivityGallery from "@/components/ui/ActivityGallery";
 
 type Cancion = {
   title: string;
@@ -183,10 +184,10 @@ export default async function ActividadDetailPage({
               </a>
             )}
             {actividad.album.length > 0 && (
-              <button className="btn btn-outline rounded-full font-bold gap-2">
+              <a href="#galeria" className="btn btn-outline rounded-full font-bold gap-2">
                 <IconPhoto size={18} stroke={1.5} />
                 {dict.actividades.verAlbum}
-              </button>
+              </a>
             )}
           </div>
         </div>
@@ -352,7 +353,7 @@ export default async function ActividadDetailPage({
         )}
 
         {/* ── ÁLBUM DE FOTOS (placeholder si vacío) ───────────────── */}
-        <div className="mt-16 pt-12 border-t border-base-300">
+        <div id="galeria" className="mt-16 pt-12 border-t border-base-300">
           <h2 className="text-2xl font-extrabold text-base-content mb-6 flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
               <IconPhoto size={16} className="text-primary" stroke={1.5} />
@@ -361,21 +362,7 @@ export default async function ActividadDetailPage({
           </h2>
 
           {actividad.album.length > 0 ? (
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {actividad.album.map((foto, i) => (
-                <div
-                  key={i}
-                  className="aspect-square rounded-2xl overflow-hidden bg-base-200 border border-base-300"
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={foto}
-                    alt={`Foto ${i + 1}`}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              ))}
-            </div>
+            <ActivityGallery images={actividad.album} />
           ) : (
             <div className="flex flex-col items-center justify-center py-16 rounded-2xl border-2 border-dashed border-base-300 text-base-content/40 gap-3">
               <IconPhoto size={40} stroke={1} />

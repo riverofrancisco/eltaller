@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" suppressHydrationWarning className={`${marcellus.variable} ${quicksand.variable} ${quicksand.className}`}>
+    <html lang="es" suppressHydrationWarning className={`scroll-smooth ${marcellus.variable} ${quicksand.variable} ${quicksand.className}`}>
       <body suppressHydrationWarning>
         <Providers>
           {children}
