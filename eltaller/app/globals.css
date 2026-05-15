@@ -52,4 +52,17 @@ body {
 /* Fix react-image-gallery fullscreen z-index */
 .image-gallery.fullscreen-modal {
   z-index: 100 !important;
-}
+}
+
+/* Centrar imágenes verticalmente en la galería de actividades */
+.activity-gallery-container .image-gallery-slide {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.activity-gallery-container .image-gallery-swipe {
+  display: flex !important;
+  align-items: center !important;
+}
+
