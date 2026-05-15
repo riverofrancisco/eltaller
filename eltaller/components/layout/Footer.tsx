@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { IconBrandInstagram, IconBrandFacebook, IconMail, IconPhone, IconMapPin } from "@tabler/icons-react";
+import { IconBrandInstagram, IconBrandFacebook, IconBrandYoutube, IconMail, IconPhone, IconMapPin } from "@tabler/icons-react";
 import type { Locale } from "@/lib/getDictionary";
 import siteData from "@/data/mock.json";
 
@@ -60,6 +60,17 @@ export default function Footer({ lang, dict, nav }: FooterProps) {
                                     aria-label="Facebook"
                                 >
                                     <IconBrandFacebook size={18} stroke={1.5} />
+                                </a>
+                            )}
+                            {site.youtube && (
+                                <a
+                                    href={site.youtube}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="btn btn-circle btn-ghost btn-sm hover:text-primary transition-colors"
+                                    aria-label="YouTube"
+                                >
+                                    <IconBrandYoutube size={18} stroke={1.5} />
                                 </a>
                             )}
                         </div>
