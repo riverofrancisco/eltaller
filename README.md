@@ -1,54 +1,93 @@
-# El Taller | Espacio de Arte
+# El Taller — Espacio de Arte
 
-Bienvenido a la web de El Taller, desarrollada con Next.js, Supabase y Material-UI.
+Official website for **El Taller, Espacio de Arte** — an arts school based in Argentina, founded in 2005. The site showcases the school's courses, teachers, events, and contact information.
 
-## Descripción
+## ✨ Tech Stack
 
-Este proyecto utiliza Next.js para el renderizado del lado del servidor y la generación de sitios estáticos, Supabase para la gestión de la base de datos y autenticación, y Material-UI para el diseño de la interfaz de usuario.
+| Technology | Purpose |
+|---|---|
+| [Next.js 16](https://nextjs.org/) | Main framework (App Router) |
+| [React 19](https://react.dev/) | UI |
+| [TypeScript](https://www.typescriptlang.org/) | Static typing |
+| [Tailwind CSS 3](https://tailwindcss.com/) | Utility-first styling |
+| [DaisyUI 4](https://daisyui.com/) | UI components & theming |
+| [next-themes](https://github.com/pacocoursey/next-themes) | Dark/light mode support |
+| [react-image-gallery](https://github.com/xiaolin/react-image-gallery) | Event photo galleries |
 
-## Características
+## 🗂️ Project Structure
 
-- Renderizado del lado del servidor (SSR) y generación de sitios estáticos (SSG) con Next.js.
-- Autenticación y gestión de base de datos con Supabase.
-- Diseño de interfaz de usuario con Material-UI.
+```
+eltaller/
+├── app/
+│   ├── [lang]/               # Internationalized routes
+│   │   ├── sobre-nosotros/
+│   │   ├── clases/
+│   │   ├── docentes/
+│   │   ├── actividades/
+│   │   └── contacto/
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/               # Reusable components
+├── data/
+│   └── mock.json             # Site data (teachers, events, setlists)
+├── dictionaries/
+│   └── es.json               # Spanish content strings
+├── lib/
+│   └── getDictionary.ts      # i18n utility
+└── public/
+    └── images/               # Site images and event photo galleries
+```
 
-## Requisitos Previos
+## 🚀 Running Locally
 
-- Node.js (versión 14 o superior)
-- npm (versión 6 o superior) o yarn
+### Requirements
 
-## Instalación
+- Node.js 18+
+- npm 9+
 
-1. Clona este repositorio:
+### Setup
 
-   ```bash
-   git clone https://github.com/riverofrancisco/eltaller.git
-   cd eltaller
-   ```
-2. Instala las dependencias:
+```bash
+# Clone the repository
+git clone https://github.com/riverofrancisco/eltaller.git
+cd eltaller/eltaller
 
-  ```bash
-  npm install
-  # o
-  yarn install
-  ```
+# Install dependencies
+npm install
 
-3. Configura las variables de entorno:
-Crea un archivo .env.local en la raíz del proyecto.
-Añade tus variables de entorno para Supabase.
+# Start the development server
+npm run dev
+```
 
-  ```
-  NEXT_PUBLIC_SUPABASE_URL=tu_supabase_url
-  NEXT_PUBLIC_SUPABASE_ANON_KEY=tu_supabase_anon_key
-  ```
+The site will be available at [http://localhost:3000](http://localhost:3000).
 
-## Ejecución
+### Available Scripts
 
-Para ejecutar el proyecto en modo de desarrollo:
+```bash
+npm run dev        # Development server with Turbopack
+npm run build      # Production build
+npm run start      # Production server
+npm run lint       # Lint with ESLint
+npm run type-check # Type checking with TypeScript
+```
 
-  ```bash
-  npm run dev
-  # o
-  yarn dev
-  ```
-Abre http://localhost:3000 en tu navegador para ver la aplicación en funcionamiento.
+## 🎨 Design System
+
+The project uses a custom DaisyUI theme (`eltaller` / `eltallerdark`) with full light and dark mode support.
+
+**Color Palette:**
+
+| Token | Light | Dark |
+|---|---|---|
+| `primary` | `#d1a3ff` (violet) | `#d1a3ff` |
+| `secondary` | `#b8edc7` (mint green) | `#b8edc7` |
+| `accent` | `#f97316` (orange) | `#fb923c` |
+| `base-100` | `#ffffff` | `#1a1625` |
+
+**Typography:**
+- Headings: **Marcellus** (serif)
+- Body: **Quicksand** (sans-serif, 500 weight)
+
+## 📄 License
+
+© El Taller, Espacio de Arte. All rights reserved.
