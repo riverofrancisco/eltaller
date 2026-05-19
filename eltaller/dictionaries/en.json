@@ -29,10 +29,22 @@
     ],
     "mision": "Learn, Create and Grow through art",
     "valores": [
-      { "titulo": "Integrity", "descripcion": "We promote the development of different arts in a relaxed environment of respect, care, and appreciation for each being." },
-      { "titulo": "Integration", "descripcion": "We accompany each learning process, unique and non-transferable, integrating talents, times, and forms of expression." },
-      { "titulo": "Creativity", "descripcion": "We invite and encourage each member to discover their potential and transform it into artistic expression." },
-      { "titulo": "Community", "descripcion": "We build bonds where students, teachers, and families learn, create, and grow together." }
+      {
+        "titulo": "Integrity",
+        "descripcion": "We promote the development of different arts in a relaxed environment of respect, care, and appreciation for each being."
+      },
+      {
+        "titulo": "Integration",
+        "descripcion": "We accompany each learning process, unique and non-transferable, integrating talents, times, and forms of expression."
+      },
+      {
+        "titulo": "Creativity",
+        "descripcion": "We invite and encourage each member to discover their potential and transform it into artistic expression."
+      },
+      {
+        "titulo": "Community",
+        "descripcion": "We build bonds where students, teachers, and families learn, create, and grow together."
+      }
     ]
   },
   "clases": {
@@ -129,7 +141,7 @@
   },
   "footer": {
     "derechos": "All rights reserved",
-    "descripcion": "El Taller — Art Space. Music for all ages."
+    "descripcion": "El Taller — Art Space. A space to learn, create and grow."
   },
   "comingSoon": "Coming soon",
   "learnMore": "Learn more"
