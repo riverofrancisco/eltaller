@@ -29,10 +29,22 @@
     ],
     "mision": "Aprender, Crear y Crecer desde el arte",
     "valores": [
-      { "titulo": "Integridad", "descripcion": "Promovemos el desarrollo de diferentes artes en un ambiente distendido, de respeto, cuidado y valoración de cada ser." },
-      { "titulo": "Integración", "descripcion": "Acompañamos cada proceso de aprendizaje, único e intransferible, integrando talentos, tiempos y formas de expresión." },
-      { "titulo": "Creatividad", "descripcion": "Invitamos y alentamos a que cada integrante descubra su potencial y lo transforme en expresión artística." },
-      { "titulo": "Comunidad", "descripcion": "Construimos lazos donde estudiantes, docentes y familias aprendemos, creamos y crecemos juntos." }
+      {
+        "titulo": "Integridad",
+        "descripcion": "Promovemos el desarrollo de diferentes artes en un ambiente distendido, de respeto, cuidado y valoración de cada ser."
+      },
+      {
+        "titulo": "Integración",
+        "descripcion": "Acompañamos cada proceso de aprendizaje, único e intransferible, integrando talentos, tiempos y formas de expresión."
+      },
+      {
+        "titulo": "Creatividad",
+        "descripcion": "Invitamos y alentamos a que cada integrante descubra su potencial y lo transforme en expresión artística."
+      },
+      {
+        "titulo": "Comunidad",
+        "descripcion": "Construimos lazos donde estudiantes, docentes y familias aprendemos, creamos y crecemos juntos."
+      }
     ]
   },
   "clases": {
@@ -129,7 +141,7 @@
   },
   "footer": {
     "derechos": "Todos los derechos reservados",
-    "descripcion": "El Taller — Espacio de Arte. Música para todas las edades."
+    "descripcion": "El Taller — Espacio de Arte. Un espacio para aprender, crear y crecer."
   },
   "comingSoon": "Próximamente",
   "learnMore": "Conocer más"
