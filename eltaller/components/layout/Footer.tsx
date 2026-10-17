@@ -6,6 +6,7 @@ import siteData from "@/data/mock.json";
 type FooterDict = {
     derechos: string;
     descripcion: string;
+    username?: string;
 };
 
 type NavDict = {
