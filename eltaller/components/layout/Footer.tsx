@@ -48,7 +48,7 @@ export default function Footer({ lang, dict, nav }: FooterProps) {
                                     className="btn btn-circle btn-ghost btn-sm hover:text-primary transition-colors"
                                     aria-label="Instagram"
                                 >
-                                    <IconBrandInstagram size={18} stroke={1.5} />
+                                    <IconBrandInstagram size={24} stroke={1.5} />
                                 </a>
                             )}
                             {site.facebook && (
@@ -59,7 +59,7 @@ export default function Footer({ lang, dict, nav }: FooterProps) {
                                     className="btn btn-circle btn-ghost btn-sm hover:text-primary transition-colors"
                                     aria-label="Facebook"
                                 >
-                                    <IconBrandFacebook size={18} stroke={1.5} />
+                                    <IconBrandFacebook size={24} stroke={1.5} />
                                 </a>
                             )}
                             {site.youtube && (
@@ -70,10 +70,14 @@ export default function Footer({ lang, dict, nav }: FooterProps) {
                                     className="btn btn-circle btn-ghost btn-sm hover:text-primary transition-colors"
                                     aria-label="YouTube"
                                 >
-                                    <IconBrandYoutube size={18} stroke={1.5} />
+                                    <IconBrandYoutube size={24} stroke={1.5} />
                                 </a>
                             )}
+                        
                         </div>
+                           <p className="text-sm text-neutral-content/70 max-w-xs">
+                            {dict.username}
+                        </p>
                     </div>
 
                     {/* Navigation */}
